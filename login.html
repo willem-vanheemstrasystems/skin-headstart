@@ -24,6 +24,7 @@ if(sub=='ipad'){location.href='login.html'}
 <script type="text/javascript" src="./js/unlock.js"></script>
 
 <style>
+  @font-face {font-family: "MPL";src:  url("./font/MyriadPro-Light_0.otf") format("opentype");font-weight: normal;font-style: normal;}@font-face {font-family: "MPLB";src:  url("./font/MyriadPro-Bold.otf") format("opentype");font-weight: normal;font-style: normal;}
 
 </style>
 
@@ -61,7 +62,7 @@ if(sub=='ipad'){location.href='login.html'}
 		        <div id="unlock-top">
 		          <p class="time">Welcome to Creations Ecosystem</p>
 		          <p id="datepicker" class="date">Brought to you by van Heemstra Systems</p>
-		        </div>
+		        </div><!--eof unlock-top-->
 
 		        <div id="unlock-spacer">
 		          <center>
@@ -72,6 +73,23 @@ if(sub=='ipad'){location.href='login.html'}
 
 		          </center>
 		        </div><!--eof unlock-spacer-->
+
+		        <div id="unlock-bottom" class="waitinitbtm">
+		        	<div id="slide-to-unlock" style="display:none">
+		        	  <center>
+		        	    <div class="masked">
+		        	      <h1 id="scrolltext" style="font-size:22px; text-shadow:0 0 3px rgba(255,255,255,0.7)"></h1>
+		        	    </div><!--eof masked-->
+		        	  <center>
+		        	</div><!--eof slide-to-unlock-->
+		        	<center>
+		        	  <div id="unlock-slider-wrapper" style="display:none">
+		        		<div id="unlock-slider">
+		        		  <div id="unlock-handle" ondblclick="loginla()"></div>
+		        		</div>
+		        	  </div>
+		        	</center>
+		        </div><!--eof unlock-bottom-->
 
 		    </div><!--eof inside-->
 		</div><!--eof scrollcontainer-->
