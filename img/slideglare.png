@@ -1,0 +1,316 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>NOPE</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+<meta name="title" content="NOPE"/> 
+
+<link rel="stylesheet" type="text/css" href="http://chromaticcreative.net/resourses/missing/tzSelect/jquery.tzSelect.css" />
+<script src="http://code.jquery.com/jquery-1.5.js"></script>
+<script src="http://chromaticcreative.net/resourses/missing/tzSelect/jquery.tzSelect.js"></script>
+<script src="http://chromaticcreative.net/resourses/missing/js/script.js"></script>
+<body>
+<center><br>
+<br>
+<h1>404</h1><br>
+<br>
+<img src="http://chromaticcreative.net/missing/gone.jpg" />
+
+<br>
+<br>
+<a href="http://casper.codes">Casper.codes</a><br>
+<a href="http://hkbtc.info">HKBTC.info</a><br>
+<a href="https://chrome.google.com/webstore/detail/ipad-simulator/biamdeofchcbekmcakjcfnpdipmkmkbb?utm_source=chrome-ntp-launcher">iPad Simulator</a><br>
+</center>
+</body>
+<style>
+.fullpage {
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+}
+
+* {
+	padding: 0px;
+	margin: 0px;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.cover{
+	height:100%;
+	background-image: radial-gradient(circle at 50% 50%, rgba(97, 165, 171, 0.49), #2A5E7F), url(media/bg3-w.jpg) !important;
+	background-image: -webkit-radial-gradient(circle at 50% 50%, rgba(97, 165, 171, 0.5), #2a5e7f), url('media/bg3-w.jpg') !important;
+	background-image: -o-radial-gradient(circle at 50% 50%, rgba(97, 165, 171, 0.5), #2a5e7f), url('media/bg3-w.jpg') !important;
+	background-image: radial-gradient(circle at 50% 50%, rgba(97, 165, 171, 0.5), #2A5E7F), url('media/bg3-w.jpg') !important;
+	background-image: url(media/bg3-w-fb.jpg);
+	background-size:cover;
+}
+
+
+.header {
+	padding-top: 50px;
+	width: 900px;
+}
+
+.min .header {
+	padding-top: 50px;
+	width: 600px;
+}
+
+.min .header a {
+	font-size: 14px;
+}
+
+body {
+	font-family: "Raleway","Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.mid {
+	position: absolute;
+	width: 100%;
+	left: 0px;
+}
+
+.empty {
+	visibility: hidden;
+	opacity: 0;
+}
+
+.glaretext {
+	background: url(slideglare.png),#000;
+	background-repeat: no-repeat;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	-webkit-animation-name: masked-animation;
+	-webkit-animation-duration: 15s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease-out;
+}
+
+@-webkit-keyframes masked-animation {
+	0% {
+		background-position: -50% 0px;
+	}
+
+	96% {
+		background-position: -50% 0px;
+	}
+
+	100% {
+		background-position: 150% 0px;
+	}
+}
+
+.hi-icon {
+	background-position: 50% 55% !important;
+}
+
+.hi-icon:hover {
+	background-position: 50% 70% !important;
+}
+a.nav {
+	padding: 10px;
+	color: #237546;
+	font-weight: 700;
+	text-shadow: none;
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	transition: color 0.3s;
+}
+
+a.nav::before,
+a.nav::after {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: #fff;
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: opacity 0.3s, -moz-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+
+a.nav::before {
+	top: 0;
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+
+a.nav::after {
+	bottom: 0;
+	-webkit-transform: translateY(10px);
+	-moz-transform: translateY(10px);
+	transform: translateY(10px);
+}
+
+a.nav:hover,
+a.nav:focus,
+a.nav:active {
+	color: #fff;
+}
+
+a.nav:hover::before,
+a.nav:focus::before,
+a.nav:hover::after,
+a.nav:focus::after,
+a.nav.active::after,
+a.nav.active::before {
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	transform: translateY(0px);
+}
+
+a.nav {
+	position: relative;
+	display: inline-block;
+	margin: 15px 25px;
+	outline: none;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	font-size: 1.35em;
+}
+
+a.nav:hover,
+a.nav:focus {
+	outline: none;
+}
+
+.console {
+	font-family: 'Lucida Console', Monaco, monospace;
+}
+
+.space {
+	height: 50px;
+}
+
+.fader {
+	padding: 100px 0px;
+	-webkit-transition: all .5s;
+	background: rgba(0,0,0,0);
+}
+
+.fader:hover {
+	background: rgba(0,0,0,0.2);
+}
+
+.fader .sof {
+	opacity: 0;
+	pointer-events: none;
+	-webkit-transition: all .5s;
+}
+
+.fader:hover .sof {
+	opacity: 1;
+	pointer-events: all;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoreation: underline;
+}
+
+.ct td {
+	padding: 10px;
+}
+
+.btn {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: transparent;
+	cursor: pointer;
+	padding: 25px 80px;
+	display: inline-block;
+	margin: 15px 30px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn span {
+	position: relative;
+	z-index: 99;
+}
+
+.btn:after {
+	content: '';
+	position: absolute;
+	z-index: 0;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn-1 {
+	border: 3px solid #BEE6F8;
+	color: #41B5FF;
+}
+.btn-1e {
+	overflow: hidden;
+}
+
+.btn-1e:after {
+	width: 100%;
+	height: 0;
+	top: 50%;
+	left: 50%;
+	background: #BEE6F8;
+	opacity: 0;
+	-webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	-moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	-ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+
+.btn-1e:hover,
+.btn-1e:active {
+	color: #7700B9;
+}
+
+.btn-1e:hover:after {
+	height: 260%;
+	opacity: 1;
+	-webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	-moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	-ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+
+.btn-1e:active:after {
+	height: 400%;
+	opacity: 1;
+}
+
+.dividerblock {
+	border-bottom: 1px solid #AAA;
+}
+a:visited{color:#353}
+	*{line-height:2em}
+</style>
+</html>

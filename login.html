@@ -25,6 +25,40 @@ if(sub=='ipad'){location.href='login.html'}
 
 <style>
   @font-face {font-family: "MPL";src:  url("./font/MyriadPro-Light_0.otf") format("opentype");font-weight: normal;font-style: normal;}@font-face {font-family: "MPLB";src:  url("./font/MyriadPro-Bold.otf") format("opentype");font-weight: normal;font-style: normal;}
+  body,html{height:100%;width:100%;padding:0;margin:0;overflow:hidden}
+  a { outline:none; }
+  #scrollcontainer { height:100%; width:100%;  }
+  body{background-image:url('./img/background.png');background-attachment:fixed;background-size: cover;}
+  #body { 
+  	overflow: hidden; height:100%; width:100%; background-position:50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+  }
+  #unlock-top {pointer-events:none;z-index:18;position: relative; height:120px;}
+  #unlock-spacer { display:block;height:272px; /* Total height = 461px - 95px (top) - 94px (bottom) */ }
+  #unlock-bottom { pointer-events:none; display:block;position: absolute; z-index:17;bottom:0px;width:100%; height:94px;}
+  #slide-to-unlock { pointer-events:none; display:block;position: absolute; z-index: 1; top: 0; left: 0; width: 100%; height:94px; background-position:center; background-repeat:no-repeat}
+  #unlock-slider-wrapper { display:block;padding-left:22px; padding-top:23px; }
+  #unlock-slider {display:block; width:277px; height:50px;position:relative; right:10px; }
+  #unlock-handle{pointer-events:all ;display:block; position: absolute; z-index: 19; height: 50px; width: 72px; top: 0px; left: 0px; background-image: url('./img/lock-slider.png'); }
+  #blackbar{pointer-events:none;padding:0; margin:0;position: relative;display:block;height:25px; background:rgba(0,0,0,0.4);width:100%;z-index:19}
+  .time { text-align:center; color:#FFFFFF; font-family:MPL; font-size:72px; padding:0; margin:0;text-shadow: rgba(255,255,255,0.5) -1px 0, rgba(255,255,255,0.3) 0 -1px, rgba(0,0,0,0.5) 0 1px, rgba(255,255,255,0.3) -1px -2px;}
+  .date { text-align:center; color:#FFFFFF;font-family:MPL;font-size:18px; padding:0; margin:0}
+  .ui-slider { position: relative; background-repeat: no-repeat; background-position: center center; }
+  .masked{position:relative; top:20px; left:30px;font-family:MPL;width:230px;background:url('./img/slideglare.png'),#666;background-repeat:no-repeat;-webkit-text-fill-color: transparent;-webkit-background-clip: text;-webkit-animation-name: masked-animation;-webkit-animation-duration: 2s;-webkit-animation-iteration-count: infinite;-webkit-animation-timing-function: linear;}
+  .maskedz{position:relative; top:20px; left:30px;font-family:MPLB;width:138px;background:url('./img/slideglare.png'),#000;background-repeat:no-repeat;-webkit-text-fill-color: transparent;-webkit-background-clip: text;-webkit-animation-name: masked-animation;-webkit-animation-duration: 2s;-webkit-animation-iteration-count: infinite;-webkit-animation-timing-function: linear;}
+  @-webkit-keyframes masked-animation {
+	0% {background-position:-30px 0px}
+	30% {background-position:300px 0px}
+	100%{background-position:300px 0px}
+  #contentbox{width:600px;height:350px; border-radius:15px; background:url('./img/rotating_gradient.jpg'); background-position:center; box-shadow:0px 0px 3px #DDD,0px 0px 5px #AAA,0px 0px 10px #666,0px 0px 15px #333;border-top-left-radius:1px !important;}
+  input{font-family:MPL; font-size:24px; border-radius:7px; box-shadow:inset 0 0 2px #333;outline:none; -webkit-transition: all .4s ease-in-out;}
+  input:hover{box-shadow:inset 0 0 4px #069;outline:none; -webkit-transition: all .4s ease-in-out}
+  input:focus{box-shadow:inset 0 0 6px #0BF;outline:none; -webkit-transition: all .4s ease-in-out;-webkit-transform: scale(1.1);}
+
+  /* more ...  see ORIGINAL-login.html */
+
+}
 
 </style>
 
@@ -68,6 +102,11 @@ if(sub=='ipad'){location.href='login.html'}
 		          <center>
 
 		            <div id="contentbox" style="z-index:15; position:relative">
+
+				        <div id="page1" style="">
+						  <img onerror="noauth()" src="./img/logo.png" id="appcheck" height="96" width="96">
+						  <h2 style="font-family:MPL">Logged In As</h2><h3 style="font-family:MPLB">wvanheemstra</h3><form name="dashform" id="dashform" onsumbmit="return false"><input type="hidden" id="logged" value="1"></form>
+						</div>
 
 		            </div><!--eof contentbox-->
 
