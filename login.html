@@ -1,7 +1,27 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<script>
+var full = window.location.host
+//window.location.host is subdomain.domain.com
+var parts = full.split('.')
+var sub = parts[0]
+if(sub=='ipad'){location.href='login.html'}
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Login</title>
 
+<meta name="Description" content="A description here.">
+<meta property="og:title" content="A title here."> 
+<meta property="og:description" content="A description here.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://chrome.google.com/webstore/detail/biamdeofchcbekmcakjcfnpdipmkmkbb">
+<meta property="og:image" content="https://lh5.googleusercontent.com/MHwYVJHlkRMSW9fdK05g0q31uVcqDKWwevQ2yASAhXgOV5zV7vTR8Z_7bOeB2k1g1-AHmyGhUA=s128-h128-e365">
+
+<script src="http://code.jquery.com/jquery-1.2.6.js"></script>
+<script type="text/javascript" src="./js/ui.core-1.5.3.js"></script>
+<script type="text/javascript" src="./js/ui.slider.js"></script>
+<script type="text/javascript" src="./js/unlock.js"></script>
 
 <style>
 
@@ -9,7 +29,33 @@
 
 </head>
 
-<body>
+<body onresize="resize();document.querySelector('body').webkitRequestFullScreen();" onload="loaded();document.querySelector('body').webkitRequestFullScreen();" onfocus="document.querySelector('body').webkitRequestFullScreen();">
+
+<div id="todestruct" style="padding:0;margin:0;border:0">
+
+    <video src="./vid/6.mp4" autoplay mute loop id="bg" class="showaa" style="height:100%; width:100%; z-index:0; position:fixed; top:0px; left:0px;"></video>
+    <img src="./vid/6.mp4" id="bg" class="showaa" onerror="this.style.display='none'" style="height:100%; width:100%; z-index:0; position:fixed; top:0px; left:0px;">
+
+	<script>
+
+		function loaded(){
+		  resize();
+		}
+
+		function resize(){
+		  $("#unlock-spacer").height($(window).height()-216);
+		  var jiogds=($(window).height()-606)/2;
+		  $("#contentbox").css("marginTop",jiogds);
+		  $(".myload").css("top",($(window).height()-64)/2);
+		  if($('video#bg').width()/16>$('video#bg').height()/9){$('video#bg').css('webkitTransform', 'scale('+($('video#bg').width()/$('video#bg').height())/(16/9)+')');}
+		  if($('video#bg').width()/16<$('video#bg').height()/9){$('video#bg').css('webkitTransform', 'scale('+($('video#bg').height()/$('video#bg').width())/(9/16)+')');}
+		  if($('video#bg').width()/16==$('video#bg').height()/9){$('video#bg').css('webkitTransform', 'scale(1)');}
+		}
+
+	</script>
+
+	</div><!--eof todestruct-->
+
 
 </body>
 
