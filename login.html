@@ -79,6 +79,18 @@ if(sub=='ipad'){location.href='login.html'}
 	</div><!--eof todestruct-->
 
 
+	<div class="myload" style="display:none; position:fixed;width:100%;">
+	  <center>
+	    <img src="./img/spinner.png" id="spinner" style="-webkit-transform:rotate(0deg)" />
+		<script>
+		  var step=1
+		  setInterval(function(){$("#spinner").css("-webkit-transform",'rotate('+(360/12*step) +'deg'); step++; if(step>=12){step=0}},75)
+		</script>
+	  </center>
+	</div>
+
+	<audio src="./snd/buddyon.mp3" id="audioun"></audio>
+
 </body>
 
 </html>
