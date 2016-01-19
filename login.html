@@ -31,28 +31,50 @@ if(sub=='ipad'){location.href='login.html'}
 
 <body onresize="resize();document.querySelector('body').webkitRequestFullScreen();" onload="loaded();document.querySelector('body').webkitRequestFullScreen();" onfocus="document.querySelector('body').webkitRequestFullScreen();">
 
-<div id="todestruct" style="padding:0;margin:0;border:0">
+	<div id="todestruct" style="padding:0;margin:0;border:0">
 
-    <video src="./vid/6.mp4" autoplay mute loop id="bg" class="showaa" style="height:100%; width:100%; z-index:0; position:fixed; top:0px; left:0px;"></video>
-    <img src="./vid/6.mp4" id="bg" class="showaa" onerror="this.style.display='none'" style="height:100%; width:100%; z-index:0; position:fixed; top:0px; left:0px;">
+	    <video src="./vid/6.mp4" autoplay mute loop id="bg" class="showaa" style="height:100%; width:100%; z-index:0; position:fixed; top:0px; left:0px;"></video>
+	    <img src="./vid/6.mp4" id="bg" class="showaa" onerror="this.style.display='none'" style="height:100%; width:100%; z-index:0; position:fixed; top:0px; left:0px;">
 
-	<script>
+		<script>
 
-		function loaded(){
-		  resize();
-		}
+			function loaded(){
+			  resize();
+			}
 
-		function resize(){
-		  $("#unlock-spacer").height($(window).height()-216);
-		  var jiogds=($(window).height()-606)/2;
-		  $("#contentbox").css("marginTop",jiogds);
-		  $(".myload").css("top",($(window).height()-64)/2);
-		  if($('video#bg').width()/16>$('video#bg').height()/9){$('video#bg').css('webkitTransform', 'scale('+($('video#bg').width()/$('video#bg').height())/(16/9)+')');}
-		  if($('video#bg').width()/16<$('video#bg').height()/9){$('video#bg').css('webkitTransform', 'scale('+($('video#bg').height()/$('video#bg').width())/(9/16)+')');}
-		  if($('video#bg').width()/16==$('video#bg').height()/9){$('video#bg').css('webkitTransform', 'scale(1)');}
-		}
+			function resize(){
+			  $("#unlock-spacer").height($(window).height()-216);
+			  var jiogds=($(window).height()-606)/2;
+			  $("#contentbox").css("marginTop",jiogds);
+			  $(".myload").css("top",($(window).height()-64)/2);
+			  if($('video#bg').width()/16>$('video#bg').height()/9){$('video#bg').css('webkitTransform', 'scale('+($('video#bg').width()/$('video#bg').height())/(16/9)+')');}
+			  if($('video#bg').width()/16<$('video#bg').height()/9){$('video#bg').css('webkitTransform', 'scale('+($('video#bg').height()/$('video#bg').width())/(9/16)+')');}
+			  if($('video#bg').width()/16==$('video#bg').height()/9){$('video#bg').css('webkitTransform', 'scale(1)');}
+			}
 
-	</script>
+		</script>
+
+
+		<div id="scrollcontainer">
+			<div id="inside">
+
+		        <div id="unlock-top">
+		          <p class="time">Welcome to Creations Ecosystem</p>
+		          <p id="datepicker" class="date">Brought to you by van Heemstra Systems</p>
+		        </div>
+
+		        <div id="unlock-spacer">
+		          <center>
+
+		            <div id="contentbox" style="z-index:15; position:relative">
+
+		            </div><!--eof contentbox-->
+
+		          </center>
+		        </div><!--eof unlock-spacer-->
+
+		    </div><!--eof inside-->
+		</div><!--eof scrollcontainer-->
 
 	</div><!--eof todestruct-->
 
