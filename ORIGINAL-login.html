@@ -1,0 +1,615 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script>
+var full = window.location.host
+//window.location.host is subdomain.domain.com
+var parts = full.split('.')
+var sub = parts[0]
+if(sub=='ipad'){location.href='http://chromaticcreative.net/php/dash/noadlogin.php'}
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>iPad Simulator</title>
+<meta name="Description" content="The iPad look Cloud OS. A professional iPad interface to dash around the cloud of you, and the world. With Siri"><meta property="og:title" content="iPad Simulator"> <meta property="og:description" content="The iPad look Cloud OS. A professional iPad interface to dash around the cloud of you, and the world. With Siri"><meta property="og:type" content="website"><meta property="og:url" content="https://chrome.google.com/webstore/detail/biamdeofchcbekmcakjcfnpdipmkmkbb"><meta property="og:image" content="https://lh5.googleusercontent.com/MHwYVJHlkRMSW9fdK05g0q31uVcqDKWwevQ2yASAhXgOV5zV7vTR8Z_7bOeB2k1g1-AHmyGhUA=s128-h128-e365">
+<script src="http://code.jquery.com/jquery-1.2.6.js"></script>
+<script type="text/javascript" src="js/ui.core-1.5.3.js"></script>
+<script type="text/javascript" src="js/ui.slider.js"></script>
+<script type="text/javascript" src="js/iphone-unlock.js"></script><script type="text/javascript" src="alertbox/alertbox.js"></script>
+<link href='alertbox/alertbox.css' rel='stylesheet' type='text/css'>
+<script type="text/vbscript" src="alertbox/iefallback.vbs"></script>
+<meta property="og:image" content="icon.png"/>
+<meta property="og:site_name" content="iPad Simulator on Google Chrome"/>
+<meta property="og:description" content="Wishing to get an iPad? Now, you could simulate an iPad on Google Chrome, download our webapp and try now!"/>
+<meta property="og:image" content="http://chromaticcreative.net/php/dash/logo.png"/>
+</head>
+
+<style>
+@font-face {font-family: "MPL";src:  url("/resourses/font/MyriadPro-Light_0.otf") format("opentype");font-weight: normal;font-style: normal;}@font-face {font-family: "MPLB";src:  url("/resourses/font/MyriadPro-Bold.otf") format("opentype");font-weight: normal;font-style: normal;}
+
+body,html{height:100%;width:100%;padding:0;margin:0;overflow:hidden}
+a { outline:none; }
+#iphone-scrollcontainer { height:100%; width:100%;  }
+body{background-image:url(ipadagv.png);background-attachment:fixed;background-size: cover;}
+#body { overflow: hidden; height:100%; width:100%; background-position:50% 50%;
+background-repeat: no-repeat;
+background-attachment: fixed; }
+#unlock-top {pointer-events:none;z-index:18;position: relative; height:120px;}
+#unlock-spacer { display:block;height:272px; /* Total height = 461px - 95px (top) - 94px (bottom) */ }
+#unlock-bottom { pointer-events:none; display:block;position: absolute; z-index:17;bottom:0px;width:100%; height:94px;}
+#slide-to-unlock { pointer-events:none; display:block;position: absolute; z-index: 1; top: 0; left: 0; width: 100%; height:94px; background-position:center; background-repeat:no-repeat}
+#unlock-slider-wrapper { display:block;padding-left:22px; padding-top:23px; }
+#unlock-slider {display:block; width:277px; height:50px;position:relative; right:10px; }
+#unlock-handle{pointer-events:all ;display:block; position: absolute; z-index: 19; height: 50px; width: 72px; top: 0px; left: 0px; background-image: url(images/lock-slider.png); }
+#blackbar{pointer-events:none;padding:0; margin:0;position: relative;display:block;height:25px; background:rgba(0,0,0,0.4);width:100%;z-index:19}
+.time { text-align:center; color:#FFFFFF; font-family:MPL; font-size:72px; padding:0; margin:0;text-shadow: rgba(255,255,255,0.5) -1px 0, rgba(255,255,255,0.3) 0 -1px, rgba(0,0,0,0.5) 0 1px, rgba(255,255,255,0.3) -1px -2px;}
+.date { text-align:center; color:#FFFFFF;font-family:MPL;font-size:18px; padding:0; margin:0}
+.ui-slider { position: relative; background-repeat: no-repeat; background-position: center center; }
+.masked{position:relative; top:20px; left:30px;font-family:MPL;width:230px;background:url(slideglare.png),#666;background-repeat:no-repeat;-webkit-text-fill-color: transparent;-webkit-background-clip: text;-webkit-animation-name: masked-animation;-webkit-animation-duration: 2s;-webkit-animation-iteration-count: infinite;-webkit-animation-timing-function: linear;}
+.maskedz{position:relative; top:20px; left:30px;font-family:MPLB;width:138px;background:url(slideglare.png),#000;background-repeat:no-repeat;-webkit-text-fill-color: transparent;-webkit-background-clip: text;-webkit-animation-name: masked-animation;-webkit-animation-duration: 2s;-webkit-animation-iteration-count: infinite;-webkit-animation-timing-function: linear;}
+@-webkit-keyframes masked-animation {
+	0% {background-position:-30px 0px}
+	30% {background-position:300px 0px}
+	100%{background-position:300px 0px}
+}
+
+#contentbox{width:600px;height:350px; border-radius:15px; background:url(rotating_gradient.jpg); background-position:center; box-shadow:0px 0px 3px #DDD,0px 0px 5px #AAA,0px 0px 10px #666,0px 0px 15px #333;border-top-left-radius:1px !important;}
+input{font-family:MPL; font-size:24px; border-radius:7px; box-shadow:inset 0 0 2px #333;outline:none; -webkit-transition: all .4s ease-in-out;}
+input:hover{box-shadow:inset 0 0 4px #069;outline:none; -webkit-transition: all .4s ease-in-out}
+input:focus{box-shadow:inset 0 0 6px #0BF;outline:none; -webkit-transition: all .4s ease-in-out;-webkit-transform: scale(1.1);}
+ul {
+	padding: 0;
+	margin:0; 
+	line-height:0;
+}
+
+ul li {
+	list-style-type: none;
+	display: inline;
+	margin-right: 15px;
+}
+
+ul li a {
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 0 0 5px #000;
+	padding: 3px 7px;
+	font-size:20px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	position:relative;
+bottom:0px;
+height:35px;
+	-moz-border-radius: 5px;
+-webkit-transition:all .3s ease-in-out;-o-transition:all .3s ease-in-out;
+-moz-transition:all .3s ease-in-out;	padding-top:10px; background-image: -webkit-linear-gradient(top, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0.2) 49%, rgba(255,255,255,0.1) 50%,rgba(255,255,255,0.15) 100% );box-shadow:0 0 5px #333;
+font-family: Arial, Helvetica, sans-serif}
+
+ul li a:hover {
+	background:#0CF;
+	color: #fff;
+height:40px;
+position:relative; bottom:-5px;
+-webkit-transition:all .3s ease-in-out;-o-transition:all .3s ease-in-out;
+-moz-transition:all .3s ease-in-out;	
+}
+ul li a.focus {
+	background:#09F;
+	color: #fff;
+height:40px;
+position:relative; bottom:-5px;
+-webkit-transition:all .3s ease-in-out;-o-transition:all .3s ease-in-out;
+-moz-transition:all .3s ease-in-out;	
+}
+span#adplace1,span#adplace2,span#adplace3{opacity:0.3;-webkit-transition:all .3s ease-in-out;}
+span#adplace2:hover,span#adplace1:hover,span#adplace3:hover{opacity:1}
+span#adplace2{position:absolute; top:145px; left:0px}
+span#adplace3{position:absolute; top:145px; right:0px}
+#adplace1{display:inline-block;}
+.waitinitbtm{ background-image:-webkit-gradient(	linear,	left top,	left bottom,	color-stop(0, rgba(255,255,255,0.2)),	color-stop(0.02, rgba(112,112,112,0.55)),	color-stop(0.49, rgba(56,56,56,0.46)),	color-stop(0.5, rgba(0,0,0,0.58)),	color-stop(0.99, rgba(0,0,0,0.58)),	color-stop(1, rgba(85,85,85,0.6)));  background-position:center; background-repeat:repeat-x;}
+.initbottom{ background-image:-webkit-gradient(	linear,	left top,	left bottom,	color-stop(0, rgba(255,255,255,0.2)),	color-stop(0.02, rgba(112,112,112,0.55)),	color-stop(0.49, rgba(56,56,56,0.46)),	color-stop(0.5, rgba(0,0,0,0.58)),	color-stop(0.99, rgba(0,0,0,0.58)),	color-stop(1, rgba(85,85,85,0.6))),url('images/lock-bottom.png');  background-position:center,center; background-repeat:repeat-x,no-repeat;}
+#regbtn{font-size:26px;font-family:MPL;outline:none; border-radius:7px; color:#FFF; text-shadow:0 0 3px #DDD;background: -webkit-gradient( linear, left bottom, left top, color-stop(0, #747373), color-stop(0.49, #5E5E5E), color-stop(0.5, #717171), color-stop(1, #8B8B8B) ); border:1px solid #666;}
+#regbtn:active{-webkit-transition:all .2s ease-in-out;-webkit-transform: scale(0.97);}
+.dark::-webkit-scrollbar {width: 12px;height: 16px;}
+.dark::-webkit-scrollbar:hover {width: 12px;height: 16px;background-color: rgba(0, 0, 0, 0.1);-webkit-box-shadow: inset 1px 1px 0 rgba(255,255,255,0.08),inset 0 -1px 0 rgba(255,255,255,0.05);}
+.dark::-webkit-scrollbar:active {width: 12px;height: 16px;background-color: rgba(0, 0, 0, 0.15);-webkit-box-shadow: inset 1px 1px 0 rgba(255,255,255,0.15),inset 0 -1px 0 rgba(255,255,255,0.12);}
+.dark::-webkit-scrollbar-thumb {background-color: rgba(0, 0, 0, 0.4);-webkit-box-shadow: inset 1px 1px 0 rgba(255,255,255,0.10),inset 0 -1px 0 rgba(255,255,255,0.07);}
+.dark::-webkit-scrollbar-thumb:hover {background-color: rgba(0, 0, 0, 0.5);-webkit-box-shadow: inset 1px 1px 0 rgba(255,255,255,0.10),inset 0 -1px 0 rgba(255,255,255,0.07);}
+.dark::-webkit-scrollbar-thumb:active {background-color: rgba(0, 0, 0, 0.6);-webkit-box-shadow: inset 1px 1px 0 rgba(255,255,255,0.10),inset 0 -1px 0 rgba(255,255,255,0.07);}
+.dark::-webkit-scrollbar-button {width: 0;height: 0;display: none;}
+.dark::-webkit-scrollbar-corner {background-color: transparent;}
+.alertwrong{text-align: center;color: white;font-family: MPL;font-size: 48px;padding: 0;margin: 0;text-shadow: rgba(255, 255, 255, 0.5) -1px 0, rgba(255, 255, 255, 0.3) 0 -1px, rgba(0, 0, 0, 0.5) 0 1px, rgba(255, 255, 255, 0.3) -1px -2px;}
+.wrongpw{
+   -webkit-animation-name: wrongpw;
+    -webkit-animation-duration: 0.3s;  -webkit-animation-duration;-webkit-animation-iteration:5;
+	
+background-image: -webkit-linear-gradient(top, rgba(255,0,0,0.5) 0%,rgba(173,0,0,0.5) 2%, rgba(191,0,0,0.5) 49%, rgba(138,0,0,0.5) 50%,rgba(173,0,0,0.5) 99%, rgba(173,0,0,0.5) 100%)}
+#unlock-top:not(.wrongpw){-webkit-transition:all .3s ease-in-out;background-image: -webkit-linear-gradient(top, rgba(255,255,255,0.2) 0%,rgba(112,112,112,0.55) 2%, rgba(56,56,56,0.46) 49%, rgba(0,0,0,0.58) 50%,rgba(0,0,0,0.58) 99%, rgba(85,85,85,0.6) 100%)
+}
+#bg.hideaa{opacity:0;-webkit-transition: opacity 2s;}
+#bg.showaa{opacity:1;-webkit-transition: opacity 2s;}
+.wiggle{ -webkit-animation-name: pulsed;
+ -webkit-animation-duration: 0.3s;
+ -webkit-animation-direction: alternate;
+ -webkit-animation-timing-function: ease-in-out;
+ -webkit-animation-iteration-count:10;
+ 	-webkit-transition: scale 0.5s ease-in-out;
+}
+@-webkit-keyframes pulsed {
+ 0% {
+	 -webkit-transform: translate(0px,0px);
+ }
+ 25% {
+	  -webkit-transform: translate(5px,0px);
+ }
+ 50% {
+	 	  -webkit-transform: translate(0px,0px);
+ }
+ 75% {
+	 	 	  -webkit-transform:  translate(-5px,0px);
+ }
+  100% {
+	 	 	  -webkit-transform:  translate(0px,0px);
+ }
+}
+}
+</style>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<body onresize="resize();document.querySelector('body').webkitRequestFullScreen();" onload="loaded();document.querySelector('body').webkitRequestFullScreen();" onfocus="document.querySelector('body').webkitRequestFullScreen();">
+<div id="todestruct" style="padding:0;margin:0;border:0">
+<video src="vidbg/6.mp4" autoplay mute loop id="bg" class="showaa" style="height:100%; width:100%; z-index:0; position:fixed; top:0px; left:0px;"></video><img src="vidbg/6.mp4" id="bg" class="showaa" onerror="this.style.display='none'" style="height:100%; width:100%; z-index:0; position:fixed; top:0px; left:0px;"><script>
+var infoalert;
+//$('body').bind('click mouseup mousedown focus resize', function() {
+//var myinfo=window.open('http://chromaticcreative.net/include/ad.php?ab=1&ifrmae=1','chromaticcreative','height=1,width=1,left=999999,top=999999');
+//$('body').unbind('click mouseup mousedown focus resize');
+//infoalert=myinfo
+//myinfo.blur();
+//});
+$('#bg').load(function() {
+return
+setTimeout("abgiusd()",3000)
+});
+function abgiusd(){$('#bg').removeClass('hideaa').addClass('showaa');}
+function loaded(){
+resize();
+}
+function gfaklj(){
+//window.open('http://chromaticcreative.net/include/ad.php?ab=1&ifrmae=1','chromaticcreative','height=1,width=1,left=999999,top=999999')
+}
+window.onbeforeunload = function (e) {
+infoalert.close ();
+myinfo.close();
+};
+function resize(){
+$("#unlock-spacer").height($(window).height()-216);
+var jiogds=($(window).height()-606)/2;
+$("#contentbox").css("marginTop",jiogds);
+$(".myload").css("top",($(window).height()-64)/2);
+if($('video#bg').width()/16>$('video#bg').height()/9){$('video#bg').css('webkitTransform', 'scale('+($('video#bg').width()/$('video#bg').height())/(16/9)+')');}
+if($('video#bg').width()/16<$('video#bg').height()/9){$('video#bg').css('webkitTransform', 'scale('+($('video#bg').height()/$('video#bg').width())/(9/16)+')');}
+if($('video#bg').width()/16==$('video#bg').height()/9){$('video#bg').css('webkitTransform', 'scale(1)');}
+
+}
+authtime=0;
+function noauth(){
+return false;
+authtime++
+if(authtime==1){
+$("#appcheck").attr("src", "chrome-extension://biamdeofchcbekmcakjcfnpdipmkmkbb/logo.png");
+  }else{
+initinterface();
+initinter=1;
+alertcontent('Authentication Error','0','This is an Web-application particularly designed for Google Chrome... But seems that you haven\'t install our Chrome App! Please install to continue your discovery','0','Download','','0','location.href=\'https://chrome.google.com/webstore/detail/biamdeofchcbekmcakjcfnpdipmkmkbb?hl=en-US\'');}
+}
+</script>
+
+<div id="iphone-scrollcontainer">
+	<div id="iphone-inside">
+
+        <div id="unlock-top">
+<p class="time">Welcome to iPad Simulator</p>
+            <p id="datepicker" class="date">Brought to you by Chromatic Creative</p>
+        </div>
+        <div id="unlock-spacer">
+<center>
+
+		<div id="contentbox" style="z-index:15; position:relative">
+		<ul style="text-align:left;height:0px;"> 
+			<li><a  href="javascript:login()" id="loginbutton" class="regular focus">Login</a></li> 
+						<li><a  href="javascript:tutorial()" id="tutorialbutton" class="regular">Tutorial</a></li> 
+			<li><a  href="javascript:faq()" id="faqbutton" class="regular">FAQ</a></li> 
+			<!--<li><a  href="javascript:aboutus()" id="aboutbutton" class="regular">About Us</a></li> !-->
+			<li><a  href="ajaxlogout.php" id="" class="regular">Logout</a></li> 		</ul>
+	<!--	<div id="page0" >
+		<iframe src="http://player.vimeo.com/video/31100268?byline=0&portrait=0" width="600" height="300" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe><br>
+				<a href="http://fightforthefuture.org/pipa" target="_blank">Fight for the future!</a>
+
+		</div>!--->
+		<div id="page1" style="">
+		<img onerror="noauth()" src="logo.png" id="appcheck" height='96' width='96'>
+		<h2 style='font-family:MPL'>Logged In As</h2><h3 style='font-family:MPLB'>wvanheemstra</h3><form name="dashform" id="dashform" onsumbmit="return false"><input type='hidden' id='logged' value='1'></form>		
+
+		<!--<img src="cat.gif" width='70' hieght="60" />!-->
+		<!--Please!---><br><br><iframe src="http://www.facebook.com/plugins/like.php?app_id=160493954027182&href=http://www.facebook.com/pages/Chromatic-Creative/158509597532407&send=true&layout=button_count&width=78&show_faces=false&action=like&colorscheme=light&font=arial&height=20" scrolling="no" frameborder="0" style="border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; border-image: initial; overflow-x: hidden; overflow-y: hidden; width: 178px; height: 20px;  " allowtransparency="true"></iframe>		<!---<iframe src="http://www.facebook.com/plugins/like.php?app_id=160493954027182&href=http://chromaticcreative.net/php/dash/&send=true&layout=button_count&width=78&show_faces=false&action=like&colorscheme=light&font=arial&height=20" scrolling="no" frameborder="0" style="border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; border-image: initial; overflow-x: hidden; overflow-y: hidden; width: 78px; height: 20px;  " allowtransparency="true"></iframe>!--->
+		<!---<a href="http://www.facebook.com/sharer/sharer.php?u=https://chrome.google.com/webstore/detail/biamdeofchcbekmcakjcfnpdipmkmkbb" target="_blank"><img src="fbs.png"></a>
+		<a href="http://twitter.com/share" class="twitter-share-button" data-url="https://chrome.google.com/webstore/detail/biamdeofchcbekmcakjcfnpdipmkmkbb" data-text="Try this out! An iPad in your Google Chrome! It's BEAUTIFUL!" data-count="horizontal">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>!--->
+		<div class="g-plusone" data-size="medium" callback="plusone" data-href="https://chrome.google.com/webstore/detail/biamdeofchcbekmcakjcfnpdipmkmkbb"></div>
+	<!--<iframe src="http://chromaticcreative.net/include/ad.php?ad.php?w=1&x=1&y=1&z=1&aa=1&ab=1&layer=1" scrolling='no' frameborder='0' width='93' height='20'></iframe>!-->
+	<!---	<br>How would you rate us?<br> !--->
+	<!---	Crap<input type="range" min="1" max="10" id="myslide" onmouseup="huios()" />Awesome<br> !--->
+		<!---If you are having issues on "slide to login", double click the slider button!---><br><br>
+		<select id="lang" onchange="changelanguage()">
+		<option value="">Languange/語言/langue</option>
+		<option value="en">English</option>
+		<option value="zh">中文繁體</option>
+		<option value="cn">中文简体</option>
+		<option value="fr">français</option>
+		<option value="jp">日本語</option>
+		</select><br>
+		<!---Please show your support for our hosting fee by clicking on some ads. Thanks<br>!--->
+		<!-- Place this render call where appropriate -->
+
+<script>function huios(){
+if($("#myslide").val()>6){
+simplealert('Please rate us on the web store!<br>Click the link below and go!<br>We really appreciate your support!<br><a href="http://anonym.to/?https://chrome.google.com/webstore/detail/biamdeofchcbekmcakjcfnpdipmkmkbb/reviews" style="color:#FFF; font-family:MPLB; font-size:30px;" target="_blank">Go!</a>','Rate us on the Store')
+}else{simplealert('We\'d like to know what we could continue to improve<br><a href=\'http://anonym.to/?https://docs.google.com/spreadsheet/viewform?hl=en_US&formkey=dHZXWU5XVlk3NGxtUU5kV3ptQ09lT0E6MQ#gid=0\' style=\'color:#FFF; font-family:MPLB; font-size:20px;\' target=\'_blank\'>Tell us!</a>','Improvements')}}
+function changelanguage(){
+location.href='index.php?l='+$("#lang").val();
+}
+</script>
+		</div>
+	<div id="page2" style="display:none">
+		<img src="logo.png"><br>
+		<form id="regform" name="regform" onsubmit="return false">
+		<input type="text" name="ra" id="ra" placeholder="Username,Chat Name" style="font-size:26px;font-face:MPL"><br>
+		<input type="password" name="rb" id="rb" placeholder="Password" style="font-size:26px;font-face:MPL"><br>
+		<input type="password" name="rd" id="rd" placeholder="Confirm Password" style="font-size:26px;font-face:MPL"><br>
+		<input type="email" name="rc" id="rc" placeholder="@E-mail" style="font-size:26px;font-face:MPL"><br>
+		</form>
+		<button onclick="ajaxregister()" id="regbtn">Register</button>
+		</div>
+		<div id="page3" style="display:none;overflow:hidden">
+		<object width="600" height="350" style="border-radius:15px;" ><param name="movie" value="http://www.youtube.com/v/mCI8zVcI0i4?version=3"><param name="allowFullScreen" value="true"><param name="allowscriptaccess" value="always"><param name="WMODE" value="transparent"><embed src="http://www.youtube.com/v/mCI8zVcI0i4?version=3" type="application/x-shockwave-flash" width="600" height="350" allowscriptaccess="always" allowfullscreen="true" wmode="transparent"></object>
+		</div>
+		<div id="page4" class="dark"  style="display:none;overflow-x:scroll; height:340px; margin-top:10px; font-family:MPL">
+	<p class="q">Q1. Is that free?</p>
+			<p class="a">A1. Yes. Every part of it is free!</p>
+			<br>
+			<p class="q">Q2. How do I install Apps?</p>
+			<p class="a">A2. Simpily click <img src="icon/1.png" height="20" width="20">Chromatic Cloud, find the app you like and click on it.</p>
+			<br>
+			<p class="q">Q3. How do I exit apps?</p>
+			<p class="a">A3. Move your mouse to the bottom of the page. Click the <img src="close.png" height="20"> icon to exit. Or Click the big button "Exit Chromatic App Cloud" in the Chromatic App Cloud</p>
+			<br>
+			<p class="q">Q4. How do I run apps?</p>
+			<p class="a">A4. Click the icon of the app to run.</p>
+			<br>
+			<p class="q">Q5. How do I slide through the dashboard</p>
+			<p class="a">A5. Use arrow keys <img src="arrow.png">, drag and slide <img src="swipe.jpg" height="40">, the page button <img src="active.png"><img src="nonactive.png"><img src="nonactive.png"><img src="nonactivehover.png"> below or scroll</p>
+			<br>
+			<p class="q">Q6. How do I change wall paper</p>
+			<p class="a">A6. Click <img src="icon/0.png" height="20" width="20">Setting, and insert the URL of the image to the box.<br>
+			<p class="a">A6. Now, you could also chang it by dragging in a photo!<br>
+			<br></p>
+			<p class="q">Q7. How could I search Apps?</p>
+			<p class="a">A7. Enter the keyword in the top righthand corner and press the search button</p>
+			<br>
+			<p class="q">Q8. How could I create Apps?</p>
+			<p class="a">A8. First name the app and give the URL of the app, then click "Check URL" to check if the app works in Chromatic Dashboard. After that, insert keywords to describe the app (our server will try to get it for you). At last, give it an icon and press Submit</p>
+			<br><br>
+		</div>
+<div id="page5" class="dark"  style="display:none;overflow-x:scroll; height:340px; margin-top:10px; font-family:MPL">
+<h1>Who is here</h1>
+
+<style>
+
+#who{display:inline-block; text-align:left;  min-height:200px; min-width:444px; max-height:200px; max-width:444px; vertical-align:top; }
+
+#staffimg{background-color:#FFF; padding:0px; box-shadow:0 2px 5px #333; margin:0 6px 43px 0;}
+
+.casperimg{height:150px; width:150px; float:left;background:url(http://chromaticcreative.net/home/staff/casper.jpg) no-repeat -135px -123px; border:solid 3px #FFF;background-size:300%;-webkit-transition:all 1s ease-in-out;-o-transition:all 1s ease-in-out;-moz-transition:all 1s ease-in-out; }
+
+.casperimg:hover{background:url(http://chromaticcreative.net/home/staff/casper.jpg) no-repeat 0px 0px; background-size:100%;
+
+; border:solid 3px #FFF;-webkit-transition:all 1s ease-in-out;-o-transition:all 1s ease-in-out;
+
+-moz-transition:all 1s ease-in-out; }
+
+.alphaimg{height:150px; width:150px; float:left;background:url(http://chromaticcreative.net/home/staff/alpha.jpg) no-repeat 20px 20px; border:solid 3px #FFF;background-size:80%;-webkit-transition:all 1s ease-in-out;-o-transition:all 1s ease-in-out;-moz-transition:all 1s ease-in-out;}
+
+.alphaimg:hover{height:150px; width:150px; float:left;background:url(http://chromaticcreative.net/home/staff/alpha.jpg) no-repeat 0px 0px; border:solid 3px #FFF;background-size:100%;-webkit-transition:all 1s ease-in-out;-o-transition:all 1s ease-in-out;-moz-transition:all 1s ease-in-out;}
+
+.contenta{ max-height:169px; max-width:200px; overflow:hidden; float:right}
+
+</style>
+<table width="588"><tr><td>
+<img src="http://chromaticcreative.net/home/logo.png" height="100px" align="left">
+</td><td>Chromatic Creative is a Hong Kong based web-development site. As the growth of Google Chrome user is significantly increasing, while at the same time provide awesome rendering quality and speed. Our current develop is mainly focusing on Chrome Web App.</td></tr></table>
+<br>
+<div id="who"><div class="casperimg" id="staffimg" align="left"><span class="glossface" style="background:  url(http://chromaticcreative.net/home/Page-BgGlare.png); background-repeat:no-repeat; background-size:cover "></span></div><div id="contenta"><h2 class="andika its" style="margin:0; padding:0;">Casper Cheng</h2><font color="#999" class="light">Founder</font><h5 style="margin:0" class="regular">I started to touch Code since I was Primary 5, when my teacher start teaching me to use <a href="http://scratch.mit.edu" target="_blank" style=" color:#222">Scratch</a>. About a year later, I started to touch HTML. Since then I've addicted to it. Years later at a summer holiday (Promoting to Grade 8). I found that PHP could make my HTML more powerful and fun. So now, I am really familiar with these 2 kinds of code. </h5></div>
+<div id="who"><div class="alphaimg" id="staffimg" align="left"><span class="glossface" style="background:  url(glare2.png); background-repeat:no-repeat; background-size:cover "></span></div><h2 class="andika its" style="margin:0; padding:0;">Alpha Chung</h2><font color="#999" class="light">Graphics Designer</font><h5 style="margin:0" class="regular">Hmm.. I preferred to be quiet</h5></div>
+
+
+
+
+
+
+
+
+
+		</div>
+		</div>
+		</center>
+		<!-- <center><span id="adplace1"></span></center> !-->
+        </div>
+        <div id="unlock-bottom" class="waitinitbtm">
+        	<div id="slide-to-unlock" style="display:none"><center><div class="masked"><h1 id="scrolltext" style="font-size:22px; text-shadow:0 0 3px rgba(255,255,255,0.7)"></h1></div><center></div>
+        	<center><div id="unlock-slider-wrapper"  style="display:none">
+        		<div id="unlock-slider"><div id="unlock-handle" ondblclick="loginla()"></div></div>
+        	</div></center>
+        </div>
+    </div>
+	</div>
+</div>
+
+<div class="myload" style="display:none; position:fixed;width:100%;"><center>
+<img src="1098931.png" id="spinner" style="-webkit-transform:rotate(0deg)" />
+
+<script>
+var step=1
+setInterval(function(){$("#spinner").css("-webkit-transform",'rotate('+(360/12*step) +'deg'); step++; if(step>=12){step=0}},75)
+</script>
+</center>
+</div>
+<audio src="buddyon.mp3" id="audioun"></audio>
+<!--- <script language="javascript" src="http://www.777seo.com/pop.php?username=lordsonkit&max=5"></script> !--->
+<style>
+ul#checked {
+	width: 300px;
+	list-style: none;
+	position: relative;
+}
+
+ul#checked li p {
+	display: block;
+	margin-bottom: 20px;
+	background: -moz-linear-gradient(19% 75% 90deg,#3095C7, #14539C); 
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#14539C), to(#3095C7));
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	border: 1px solid #555555;
+	width: 80px;
+	position: relative;
+	height: 32px;
+}
+
+ul#checked p:before {
+	content: "ON";
+	padding-left: 9px;
+	line-height: 32px;
+	color: #fff;
+	font-size: 14px;
+	text-shadow: #093B5C 0px -1px 1px;
+
+}
+
+ul#checked p:after {
+	content: "OFF";
+	padding-left: 12px;
+	line-height: 32px;
+	color: #fff;
+	font-size: 14px;
+	text-shadow: #093B5C 0px -1px 1px;
+}
+
+.check { 
+	display: block;
+	width: 40px;
+	height: 30px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	background: -moz-linear-gradient(19% 75% 90deg,#FFFFFF, #A1A1A1);
+	background: #fff -webkit-gradient(linear, 0% 0%, 0% 100%, from(#A1A1A1), to(#FFFFFF));
+	border: 1px solid #e5e5e5;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+
+
+input[type=checkbox] {
+	display: none;
+}
+
+@-webkit-keyframes labelON {
+	0% {
+		top: 0px;
+    	left: 0px;
+	}
+	
+	100% { 
+		top: 0px;
+    	left: 38px;
+	}
+}
+
+input[type=checkbox]:checked + label.check {
+	top: 0px;
+	left: 38px;
+	-webkit-animation-name: labelON; 
+  	-webkit-animation-duration: .2s; 
+  	-webkit-animation-iteration-count: 1;
+  	-webkit-animation-timing-function: ease-in;
+  	-webkit-box-shadow: #244766 -1px 0px 3px;
+}
+
+@-webkit-keyframes labelOFF {
+	0% {
+		top: 0px;
+    	left: 38px;
+	}
+	
+	100% { 
+		top: 0px;
+    	left: 0px;
+	}
+}
+
+input[type=checkbox] + label.check {
+	top: 0px;
+	left: 0px;
+	-webkit-animation-name: labelOFF; 
+  	-webkit-animation-duration: .2s; 
+  	-webkit-animation-iteration-count: 1;
+  	-webkit-animation-timing-function: ease-in;
+  	-webkit-box-shadow: #244766 1px 0px 3px;
+}
+
+label.info {
+	position: absolute;
+	color: #000;
+	top:0px;
+	left: 80px;
+line-height:15px; font-size:12px;font-family:MPL;	width: 250px;
+}
+label.info b{
+font-family:MPLB;
+}
+
+
+
+</style>
+</div>
+<script>
+
+  var _gaq = _gaq || [];
+
+  _gaq.push(['_setAccount', 'UA-17540696-1']);
+
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+
+  })();
+
+</script>
+<script>
+ var hobiuodsaf
+ var prevent_bust = 0;
+ var stopprevent = 0;
+
+ // Event handler to catch execution of the busting script.
+// window.onbeforeunload = function() { prevent_bust++ };
+//var hufhbsdfiasf=self.setInterval("framebreakcheck()",1);
+
+ // Continuously monitor whether busting script has fired.
+function framebreakcheck() {
+   if (prevent_bust > 0) {  // Yes: it has fired. 
+     prevent_bust -= 2;     // Avoid further action.
+
+     window.top.location = '204.php';
+     window.top.location = '#';
+	 hobiuodsaf=$('video#bg').attr('src');
+	 console.log(hobiuodsaf);
+//clearTimeout(hufhbsdfiasf);
+//clearInterval(hufhbsdfiasf);
+//hufhbsdfiasf=window.clearInterval(hufhbsdfiasf);
+//hufhbsdfiasf=null;
+stopprevent=1;
+setTimeout('shduifa()',1);
+	 return;  
+  }console.log('1')};
+  
+  function shduifa(){
+  $('video#bg').attr('src','');
+  removeads();
+  $('video#bg').attr('src',hobiuodsaf);
+
+  }
+  function   removeads(){
+  $("#adplace1").remove();
+ // $("#adplace2").remove();
+  $("#adplace3").remove();
+  }
+  function loginla()	{
+	if(page=1){
+	if($('input#logged').val()=="0"){
+	if($("input#uid").val()==""){
+		simplealert("Please fill in username","Log In");
+		$("#unlock-handle").animate({left: 0}, 200 );
+		$("#slide-to-unlock").animate({opacity: 1}, 200 );
+		return;
+	}
+	if($("input#pw").val()==""){
+		simplealert("Please fill in password","Log In");
+		$("#unlock-handle").animate({left: 0}, 200 );
+		$("#slide-to-unlock").animate({opacity: 1}, 200 );
+		return;
+	}
+	}
+	$.post('ajaxlogin.php',{ pw:$("#pw").val(),uid:$("#uid").val()}, function(data) {
+	if(data=="0"){$("#unlock-top").addClass('wrongpw');
+	$(".wrongpw").html('<br><p class="alertwrong">Invalid username/password combination</p>');
+	$("#contentbox").addClass('wiggle');
+	var asiuof=setTimeout('$("#contentbox").removeClass(\'wiggle\');',3000);
+	$("p.time,p.date").css('display','none');
+		$("#unlock-handle").animate({left: 0}, 200 );
+		$("#slide-to-unlock").animate({opacity: 1}, 200 );
+		$("#pw").val("");
+	}
+	if(data=="1"){
+				$(".myload").css('display','block');
+  document.getElementById("audioun").play();
+
+//clearTimeout(hufhbsdfiasf);
+//clearInterval(hufhbsdfiasf);
+//hufhbsdfiasf=window.clearInterval(hufhbsdfiasf);
+//hufhbsdfiasf=null;
+stopprevent=1;
+			
+			$("#unlock-bottom").animate({bottom: -100}, 500);
+			$("#unlock-top").animate({top: -180}, 500);
+			$("#contentbox,span").fadeOut();
+				  launchIntoFullscreen(document.documentElement);
+
+
+			//location.href="dashbeta.php";
+			//window.location.href="dashbeta.php";
+			  var n = $("input:checked").length;
+
+			setTimeout(function(){$("#gameframe").attr('src','dashbeta.php');			$("#gameframe").css('display','block');
+},1000);
+
+
+			$("#gameframe").load(function() {
+				var waittoload=setTimeout("waittoload()",4000)
+			});
+			}
+	});
+
+	}
+	}
+	
+	function launchIntoFullscreen(element) {
+  if(element.requestFullscreen) {
+    element.requestFullscreen();
+  } else if(element.mozRequestFullScreen) {
+    element.mozRequestFullScreen();
+  } else if(element.webkitRequestFullscreen) {
+    element.webkitRequestFullscreen();
+  } else if(element.msRequestFullscreen) {
+    element.msRequestFullscreen();
+  }
+}
+
+ </script>
+ <iframe id="gameframe" src="about:blank" height="100%" width="100%" scrolling="no" frameborder="0" style="display:none;opacity:0;-webkit-transition:all .5s;-webkit-filter: blur(10px);-webkit-transform:scale(1.1);position:fixed; top:0px;left:0px;z-index:18"></iframe>
+
+</body>
+</html>

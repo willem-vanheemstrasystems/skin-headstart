@@ -1,0 +1,1805 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" style="background: url(ipadagv.png);">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>My Dashboard</title>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js'></script>   
+ <script src="scrollto.js"></script>  <script src="easing.js"></script> <script type="text/javascript" src="jquery.mousewheel.min.js"></script> <script type="text/javascript" src="h5utils.js"></script> 
+  <script type="text/javascript" src="alertbox/alertbox.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic' rel='stylesheet' type='text/css'> 
+
+<link href='http://fonts.googleapis.com/css?family=Andika' rel='stylesheet' type='text/css'>
+
+<link href='alertbox/alertbox.css' rel='stylesheet' type='text/css'>
+<script type="text/vbscript" src="alertbox/iefallback.vbs"></script>
+</head>
+<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+<script>
+ var hobiuodsaf
+ var prevent_bust = 0;
+ var stopprevent = 0;
+
+ // Event handler to catch execution of the busting script.
+ //window.onbeforeunload = function() { prevent_bust++ };
+//var hufhbsdfiasf=self.setInterval("framebreakcheck()",1);
+
+ // Continuously monitor whether busting script has fired.
+function framebreakcheck() {
+   if (prevent_bust > 0) {  // Yes: it has fired. 
+     prevent_bust -= 2;     // Avoid further action.
+
+     window.top.location = '204.php';
+     window.top.location = '#';
+	 hobiuodsaf=$('video#bg').attr('src');
+	 console.log(hobiuodsaf);
+clearTimeout(hufhbsdfiasf);
+clearInterval(hufhbsdfiasf);
+hufhbsdfiasf=window.clearInterval(hufhbsdfiasf);
+hufhbsdfiasf=null;
+stopprevent=1;
+setTimeout('shduifa()',100);
+	 return;  
+  }console.log('1')};
+  
+  function shduifa(){
+  $('video#bg').attr('src','null.mp4');
+  removeads();
+  $('video#bg').attr('src',hobiuodsaf);
+
+  }
+ </script>
+<style>
+
+/* TESTING AREA */
+
+
+#likecommentbox{display:none}
+/* Was "display:inline-block; */
+/* END TEST */
+
+
+
+
+
+
+
+.pageno{opacity:1}
+textarea,#chatwrapper,#onlineusers,#postuser,#postcontent,span b, span>b, li#u,.editable{-moz-user-select:text !important; -webkit-user-select:text !important;}
+*:not(input){-moz-user-select:none; -webkit-user-select:none;}
+@font-face {
+font-family: "MPL";
+src: local("2"), url("http://chromaticcreative.net/resourses/font/Helvetica Neue.ttf") format("truetype");
+font-weight: normal;
+font-style: normal;
+}
+*::-webkit-scrollbar{width:8px;height:6px;background:transparent;background-color: rgba(255, 255, 255, 0.05);-webkit-box-shadow: inset 1px 1px 0 rgba(255,255,255,0.04),inset 0 -1px 0 rgba(255,255,255,0.02); }
+*::-webkit-scrollbar:hover {width: 8px;height:8px;background-color: rgba(255, 255, 255, 0.1);-webkit-box-shadow: inset 1px 1px 0 rgba(255,255,255,0.08),inset 0 -1px 0 rgba(255,255,255,0.05);}
+*::-webkit-scrollbar-button:start:decrement,* ::-webkit-scrollbar-button:end:increment{display:none}
+*::-webkit-scrollbar-track-piece{background:transparent;;-webkit-border-radius:6px;}
+*::-webkit-scrollbar-thumb{height:50px;background:rgba(72,72,72,0.5);-webkit-border-radius:6px; border:1px solid #AAA}
+*::-webkit-scrollbar-thumb:hover{height:50px;background:rgba(80,80,80,0.7);-webkit-border-radius:6px; border:1px solid #AAA}
+
+*{padding:0; margin:0; font-family: MPL;}
+html{ background-color:#000; color:#FFF; overflow:hidden; background:#000; background-size:100% 100%; background-repeat:no-repeat; background-attachment:fixed; }
+
+    @-webkit-keyframes thumb-fade {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+.iconholder{width:100%; height:100%; display:inline-block;-webkit-transform-origin: 0px;}
+#icontd{height:116px; width:200px;  padding-left:20px; padding-right:20px;-webkit-transition: all 0.8s ease-in-out;position:relative; right:0%; bottom:0px;opacity:1;}
+#icon{height:96px; width:96px; text-align:center; border-radius:5px;}
+p#title{ text-align:center;  text-overflow: ellipsis; text-shadow: rgba(0,0,0,0.5) -1px 0, rgba(0,0,0,0.3) 0 -1px, rgba(255,255,255,0.5) 0 1px, rgba(0,0,0,0.3) -1px -2px; font-weight:bold; font-size:16px;white-space: nowrap;overflow: hidden;width:200px; height:24px;}
+
+iframe.open{ -webkit-transition: all 0.8s ease-in-out;top:0px; left:0px; height:99%; width:100%; z-index:999; position:fixed; background-color:#fff; opacity:1;
+
+}
+iframe.open.re{ -webkit-transition: all 0.8s ease-in-out;top:0px; left:0px; height:99%; width:100%; z-index:999; position:fixed; background-color:#fff; opacity:1;
+-webkit-transform-style: flat; -webkit-backface-visibility: hidden; -webkit-animation-name:  flip_bottom;  -webkit-animation-duration: 0.8s; -webkit-animation-iteration-count: 1;  -webkit-animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);}
+iframe.close{ -webkit-transition: all 0.8s ease-in-out;-webkit-transform: scale(0);top:0px; left:0px; height:100%; width:100%; z-index:999; position:fixed; background-color:#fff }
+iframe.minimized{ opacity:0; -webkit-transition: all 0.8s ease-in-out;top:50%; left:50%; height:0%; width:0%; z-index:-1; position:fixed; background-color:#fff; 
+/* -webkit-transform-style: flat; -webkit-backface-visibility: hidden; -webkit-animation-name: flip_top;  -webkit-animation-duration: 0.6s; -webkit-animation-iteration-count: 1;  -webkit-animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);*/ }
+#bar.open{ -webkit-transition: all 0.5s ease-in-out; z-index:99999;}
+#bar.close{ height:0px; width:0px; -webkit-transition: all 0.5s ease-in-out; z-index:99999;}
+#ajaxframe.open{height:100%; width:100%; opacity:1; -webkit-transition: all 0.5s ease-in-out;}
+#wrapper{position:relative; bottom:0px; left:0px ; -webkit-transition: all 0.8s ease-in-out;height:100%; width:100%; display:inline-block}
+#wrapper.ctr{position:relative; bottom:112px; left:0px;}
+#ajaxframe.close{ height:0%; width:100%; opacity:0; -webkit-transition: all 0.5s ease-in-out; overflow:hidden}
+.activepage:not(.searchpage){ background-image:url(active.png);}
+.activepage:not(.searchpage):hover{ background-image:url(activeglow.png);}
+.nonactive:not(.searchpage){ background-image:url(nonactive.png);}
+.nonactive:not(.searchpage):hover{ background-image:url(nonactivehover.png);}
+.activepage.searchpage{ background-image:url(findb.png);}
+.activepage.searchpage:hover{ background-image:url(findc.png);}
+.nonactive.searchpage{ background-image:url(finda.png);}
+.nonactive.searchpage:hover{ background-image:url(findd.png);}
+
+#pagenav{ height:15px; width:15px; display:inline-block; margin:3px;text-decoration:none;}
+
+tr:nth-child(1)>#icontd.r:nth-child(1){ position:relative; right:50%; bottom:500px;opacity:0}
+tr:nth-child(1)>#icontd.r:nth-child(2){ position:relative; right:50%; bottom:500px;opacity:0}
+tr:nth-child(1)>#icontd.r:nth-child(3){ position:relative;  right:-50%;bottom:500px;opacity:0}
+tr:nth-child(1)>#icontd.r:nth-child(4){ position:relative;  right:-50%;bottom:500px;opacity:0}
+tr:nth-child(2)>#icontd.r:nth-child(1){ position:relative; right:50%; bottom:500px;opacity:0}
+tr:nth-child(2)>#icontd.r:nth-child(2){ position:relative; right:50%; bottom:500px;opacity:0}
+tr:nth-child(2)>#icontd.r:nth-child(3){ position:relative;  right:-50%;bottom:500px;opacity:0}
+tr:nth-child(2)>#icontd.r:nth-child(4){ position:relative;  right:-50%;bottom:500px;opacity:0}
+tr:nth-child(3)>#icontd.r:nth-child(1){ position:relative; right:50%; bottom:-500px;opacity:0}
+tr:nth-child(3)>#icontd.r:nth-child(2){ position:relative; right:50%; bottom:-500px;opacity:0}
+tr:nth-child(3)>#icontd.r:nth-child(3){ position:relative;  right:-50%;bottom:-500px;opacity:0}
+tr:nth-child(3)>#icontd.r:nth-child(4){ position:relative;  right:-50%;bottom:-500px;opacity:0}
+tr:nth-child(4)>#icontd.r:nth-child(1){ position:relative; right:50%; bottom:-500px;opacity:0}
+tr:nth-child(4)>#icontd.r:nth-child(2){ position:relative; right:50%; bottom:-500px;opacity:0}
+tr:nth-child(4)>#icontd.r:nth-child(3){ position:relative;  right:-50%;bottom:-500px;opacity:0}
+tr:nth-child(4)>#icontd.r:nth-child(4){ position:relative;  right:-50%;bottom:-500px;opacity:0}
+@-webkit-keyframes flip_top{
+    0%{
+left:0%;
+top:0%;
+    }
+    40%{
+left:60%;
+top:30%;    }
+    100%{
+left:50%;
+top:50%;  
+    }
+}
+@-webkit-keyframes flip_bottom{
+    0%{
+	right:0%;
+top:0%;
+    }
+    40%{
+right:60%;
+top:30%; 
+    }
+    100%{
+right:0%;
+top:0%;    }
+}
+
+.flip_top{
+top:0px; left:0px; height:99%; width:100%; z-index:999; 
+ -webkit-transform-style: flat;
+ -webkit-backface-visibility: hidden;
+ -webkit-animation-name: flip_top;
+  -webkit-animation-duration: 0.6s;
+ -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
+
+}
+.flip_bottom{
+top:0px; left:0px; z-index:998; 
+ -webkit-transform-style: flat;
+ -webkit-backface-visibility: hidden;
+ -webkit-animation-name: flip_bottom;
+  -webkit-animation-duration: 0.6s;
+ -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
+ /*-webkit-transform: rotateY(60deg) translate3d(-200px, -50px, -317px);*/
+}
+#bg.hideaa{opacity:0;-webkit-transition: opacity 1s;}
+#bg.showaa{opacity:1;-webkit-transition: opacity 1s;}
+.icontable{overflow:hidden}
+#stoptaskbutton{cursor:pointer;height:16px; width:16px; background-color:#EA0000;font-size:24px;padding:0px; margin:0px ;font-family:MPLB; font-weight:bolder; border-radius:16px; border:2px solid #FFF; box-shadow:0 2px 3px #666; position:relative; left:0px; top:5px;z-index:6002}
+.darkhole{-webkit-transition:all 0.5s ease-in;-webkit-transform:skew(30deg, 0deg) scale(0.0);opacity:0;-webkit-transform-origin:0% 0%;}
+#pagecount.show{position:fixed; bottom:0px; left:0px;-webkit-transition: all 0.5s ease-in-out; height:70px; width:100%;z-index:20;}
+#pagecount.hide{position:fixed; bottom:-70px; left:0px;-webkit-transition: all 0.5s ease-in-out; height:70px; width:100%;z-index:20;}
+
+#ads tr, #ads td, #ads{padding:0px; margin:0px;}
+table#ads{background-color:rgba(255,255,255,0.2); border-radius:10px; overflow:hidden; box-shadow:0 0 5px #FFF}
+#rmva:hover{-webkit-transform:scale(1.05);-webkit-transition:all 0.5s}
+#rmva{-webkit-transition: all 0.5s}
+</style>
+<body onload="resize();meload();" ondragenter="ods()" ondragend="odd()" ondrop="odd()"  onresize="resize()" >
+<div style="position:fixed; z-index:10005; background:rgba(0,0,0,0.8); height:100%;width:100%;color:#FFF; top:0px; left:0px; font-size:60px; text-shadow:0 0 5px #000;display:none" id="loadingcover"><center><br><br><br><br>Loading<br><a href="javascript:meload()" style="font-size:12px; color:#FFF">Click here to force load and close this cover</a><br><br><a href="javascript:meload()" style="font-size:15px; color:#FFF">You may see a few popups, please kindly know that we have to pay for the server.<br> Thanks. Hope it wont interrupt you a lot.</a></center><img src="siri/arrow_down.png" style="position:fixed; bottom:95px; left:0px;"/><div style="position:fixed; bottom:20px; left:20px;font-size:22px; color:#FFF"><img src="siri/icon.png" height="60" width="60"/>You could find Siri by sliding your mouse to the bottom of the screen!</div>
+<div style="position:fixed; top:20%; left:20%;font-size:22px; color:#FFF"><img src="icon/0.png" height="60" width="60"/>Don't forget to set an awesome animated background!</div>
+</div>
+<video src="vidbg/6.mp4" autoplay mute loop id="bg" class="showaa" style="height:100%; width:100%; z-index:0; position:fixed; top:0px; left:0px;"></video>
+ <div style="position:fixed; top:0px; left:0px; z-index:999; background-color:#000;opacity:0.3" class="pageno">0/0</div>
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/zh_HK/all.js#xfbml=1&appId=219108099916";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script type="text/javascript" src="ajaxupload.js"></script>
+  <script type="text/javascript">
+	$(document).ready(function(){
+		/* Example 1 */
+		var button = $('#uploadbox'), interval;
+		
+		new AjaxUpload(button, {
+			action: '../imagehost/upload/dashup.php', 
+			name: 'file',
+			onSubmit : function(file, ext){
+					button.text('Uploading');		
+				// If you want to allow uploading only 1 file at time,
+				// you can disable upload button
+				this.disable();
+				
+
+			},
+			onComplete: function(file, response){
+				window.clearInterval(interval);
+							
+				// enable upload button
+				this.enable();
+				
+				// add file to the list
+				if(response=="ft.jpg"){simplealert('Filetype not supported','iPad Simulator');odd();	button.text('Drop any image here to set them as background');		return}
+					odd();			
+					$("input#bgurl").val(response);
+					previewbg();
+					savebg();
+					button.text('Drop any image here to set them as background');	
+			}
+		});
+		});
+</script>
+<script>
+function savebg(){
+  $.get('savebg.php',{ q:$('#bgurl').val(), u:'wvanheemstra'}, function(dataa) {
+  savebg=1;
+simplealert(dataa,'iPad Simulator');
+});
+}
+function savebgargh(){
+  $.get('savebg.php',{ q:$('#bgurl').val(), u:'wvanheemstra'}, function(dataa) {
+  savebg=1;
+simplealert(dataa,'iPad Simulator');
+});
+}
+var d=new Date()
+var gmtHours = -d.getTimezoneOffset()/60;
+var intav;
+var curx;
+var winw;
+var curxe;
+var page;
+var t;
+var removedad=0;
+var appcount=0;
+var currapp=0;
+var currandbgapp =[1,0];
+var page=1;
+var searching=0;var installedexpan=0;
+var opennoti;
+var savebg=1;
+var newmsg;
+var maxpage=1;
+function origbg(){
+$.get("bg.php", {u:"wvanheemstra"},function(da) { $("#bgurl").val(da);previewbg();});
+}
+function wantedit(){t=setTimeout("editapp()",3000); }
+  $("body").mousedown(function(e) {
+curx=e.pageX-winw*page;
+  });
+  $("body").mouseup(function(f) {
+clearTimeout(t);curxe=f.pageX-winw*page;
+winw=$(window).width();
+
+if((150<=curxe-curx)){
+  if(currapp==0){prevpage();}
+}
+if((150<=curx-curxe)){	
+  if(currapp==0){nextpage();}}	
+  });
+  function editapp(){$('#fo').removeClass('foh').addClass('fos');
+   setTimeout('goa()',1500);}
+   function goa(){location.href='appedit.php'}
+	function resize() {
+	
+	var sjiaog=$(window).width();
+	$('#noti').css('left',(sjiaog-592)/2+'px');
+	$('#notifybar').css('left',(sjiaog-392)/2+'px');
+	if(sjiaog<970){$(".iconholder").css("-webkit-transform",'scale('+(sjiaog/970)+')');
+}else{$(".iconholder").css("-webkit-transform",'');
+}
+
+	
+		var pad=$(window).width();pad=(pad-970)/2;
+		var padt=$(document).height();padt=(padt-474);padt=padt/4;
+		$("td.icontable").width($(window).width());
+$(".mttb").width($(window).width());
+		$("td.icontable").height($(window).height());
+$(".iconholder").css('paddingLeft',pad).css('paddingRight',pad).css('paddingBottom',padt).css('paddingTop',padt);
+var pno=$(".pageno").text();
+gopagei(pno);
+if($('video#bg').width()/16>$('video#bg').height()/9){$('video#bg').css('webkitTransform', 'scale('+($('video#bg').width()/$('video#bg').height())/(16/9)+')');}
+if($('video#bg').width()/16<$('video#bg').height()/9){$('video#bg').css('webkitTransform', 'scale('+($('video#bg').height()/$('video#bg').width())/(9/16)+')');}
+if($('video#bg').width()/16==$('video#bg').height()/9){$('video#bg').css('webkitTransform', 'scale(1)');}
+
+}  
+function nextpage(){
+	if(page>=maxpage){ $("#wrapper").addClass('ctr');$("#mt").removeClass('mtc').addClass('mto');ob=1;return false}else{if(ob==1){ $("#wrapper").removeClass('ctr'); $("#mt").addClass('mtc').removeClass('mto');ob=0; return false}
+		page++;$('.activepage').removeClass('activepage').addClass('nonactive');
+$('.'+(page+1)+'').addClass('activepage').removeClass('nonactive');
+
+				$('.pageno').html(page+1);
+checksbg();
+
+	$paneTarget = $('body');
+		$paneTarget.stop().scrollTo( '.icontable:eq('+page+')', 600,{ easing:'easeOutCubic' }  );
+		}}
+function prevpage(){
+	if(page<=0){ $("#wrapper").addClass('ctr');$("#mt").removeClass('mtc').addClass('mto');ob=1;return false}else{if(ob==1){ $("#wrapper").removeClass('ctr'); $("#mt").addClass('mtc').removeClass('mto');ob=0; return false}
+		$('.activepage').removeClass('activepage').addClass('nonactive');
+$('.'+page+'').addClass('activepage').removeClass('nonactive');
+page=page-1;
+checksbg();
+
+		$('.pageno').html(page+1);
+	$paneTarget = $('body');
+		$paneTarget.stop().scrollTo( '.icontable:eq('+page+')', 600,{ easing:'easeOutCubic' } );
+		}		}
+function gopage(pagez){
+$('.activepage').removeClass('activepage').addClass('nonactive');
+$('.'+pagez+'').addClass('activepage').removeClass('nonactive');
+		page=pagez-1;
+		
+
+		$('.pageno').html(page+1);
+	$paneTarget = $('body');
+		$paneTarget.stop().scrollTo( '.icontable:eq('+page+')', 600,{ easing:'easeOutCubic' } );
+			checksbg();}
+function gopagei(page){
+$('.activepage').removeClass('activepage').addClass('nonactive');
+$('.'+page+'').addClass('activepage').removeClass('nonactive');
+		page=page-1;
+		checksbg();
+
+		$('.pageno').html(page+1);
+	$paneTarget = $('body');
+		$paneTarget.stop().scrollTo( '.icontable:eq('+page+')', 0,{ easing:'easeOutCubic' } );
+			}		
+function checksbg(){
+if(page=="0"){$('#sbg').addClass('ovlshown').removeClass('ovlhidden');
+}else{
+$('#sbg').addClass('ovlhidden').removeClass('ovlshown');
+}
+}			
+function runapp() {
+$("td#icontd").addClass('r');$("#pagecount").removeClass('show').addClass('hide');
+  }	    
+  function exitapp() {
+$("td#icontd").removeClass('r');$("#pagecount").removeClass('hide').addClass('show');
+  }	    
+function backd(){document.getElementById('bgurl').value = 'ipadagv.png';previewbg();savebg()}  
+
+$(document).ready(function(e) {
+gopage(2);
+  $('.rotategradient').css('-webkit-transition-duration','1s');
+
+	   $('.rotategradient').css('-webkit-transform','rotate(0deg)');
+
+
+setdateandtime();
+	$("#ra").hide(500);
+			clockt();
+	resize();
+	//$("body").append('<img src="chrome-extension://flilbimnooaobdakipdfkcacbnhbkmko/icon128.png" id="tracker" onerror="installexpansion()" style="display:none" height="1" width="1"/>');
+
+});
+$('#bg').load(function() {
+return;
+setTimeout("abgiusd()",3000);
+});
+function removeads(){
+	// $("#ad200250 #iframeads").remove();return false;
+
+	// $("#ad200250 table").append('<center><iframe id="forsale" style="height:346px; width:743px; border:1px dashed #000; font-family:MPLB; font-size:18px;background:url(\'adplace.jpg\');padding:0; margin:0;" src="forsale.php"></iframe></center><br>');
+
+}
+
+function meload(){
+$("#loadingcover").fadeOut();
+  // $("#ad200250").html('<table style="word-wrap: break-word;padding:0px; margin:0px;" id="ads"><tr id="iframeads"><td style="width:300px"><iframe id="ad"  src="http://chromaticcreative.net/include/ad.php?w=1&amp;ifrmae=1" style="" height="250" width="300" scrolling="no" frameborder="0" allowtransparency="yes"></iframe></td><td style="width:110px;word-wrap: break-word;cursor:pointer" id="rmva" onclick="removeads();"><center>Remove Ads</center></td><td style="width:300px"><iframe id="ad"  src="http://chromaticcreative.net/include/ad.php?w=1&amp;ifrmae=1" style="" height="250" width="300" scrolling="no" frameborder="0" allowtransparency="yes"></iframe></td></tr><tr  id="iframeads"><td colspan="3"><iframe id="ad"  src="http://chromaticcreative.net/include/ad.php?x=1&amp;ifrmae=1" height="90" width="728" scrolling="no" frameborder="0" allowtransparency="yes"></iframe></td></tr><tr><td colspan="3">To contact us, send an eMail to chromaticcreative@gmail.com . We would reply you as soon as possible.</td></tr><tr><td colspan="3"><center><iframe src="http://www.facebook.com/plugins/like.php?app_id=160493954027182&amp;href=http://chromaticcreative.net/php/dash/&amp;send=true&amp;layout=button_count&amp;width=78&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=20" scrolling="no" frameborder="0" style="border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; border-image: initial; overflow-x: hidden; overflow-y: hidden; width: 78px; height: 20px;  " allowtransparency="true"></iframe><a href="http://www.facebook.com/sharer/sharer.php?u=http://chromaticcreative.net/php/dash/" target="_blank"><img src="fbs.png"></a><div class="g-plusone" data-size="medium" callback="plusone" data-href="https://chrome.google.com/webstore/detail/biamdeofchcbekmcakjcfnpdipmkmkbb"></div><iframe src="http://chromaticcreative.net/include/ad.php?flatter=1&iframe=1" scrolling="no" frameborder="0" width="93" height="20"></iframe></center></td></tr></table>')
+setTimeout("abgiusd()",3000);
+$('a').attr('target','_blank');
+
+
+}
+
+function abgiusd(){
+  //removeads();
+$('#bg').removeClass('hideaa').addClass('showaa');}
+$(document).keyup(function(event) {
+  if ( event.which == 37 ) {
+     if(currapp==0&&noti==0){ prevpage();}
+   }
+     if ( event.which == 38 ) {
+		 $("#wrapper").addClass('ctr');
+ 		 $("#mt").removeClass('mtc').addClass('mto');ob=1;
+		 if(currapp!=0&&noti==0){$("#tbovl").addClass('ovlshown').removeClass('ovlhidden');$("iframe").css("top", "-107px"); }
+
+  }   
+  if ( event.which == 39 ) {
+      if(currapp==0&&noti==0){ nextpage();}
+   } 
+        if ( event.which == 40 ) {
+ 		 $("#mt").removeClass('mto').addClass('mtc')
+   $("#wrapper").removeClass('ctr');ob=0;$("#tbovl").removeClass('ovlshown').addClass('ovlhidden');$("iframe").css("top", "0px"); 
+  }    
+});
+function ob(){		 $("#wrapper").addClass('ctr');
+ 		 $("#mt").removeClass('mtc').addClass('mto');}
+function cb(){		 		 $("#mt").removeClass('mto').addClass('mtc')
+   $("#wrapper").removeClass('ctr');
+}
+
+function previewbg(){
+savebg=0;
+var stras=$("#bgurl").val();
+if(stras.substring(0,6)=="vidbg/"){
+$("img#bg").addClass('hideaa').removeClass('showaa');
+$("video#bg").addClass('showaa').removeClass('hideaa').attr('src',$("#bgurl").val());
+$("html").css('background','#000');
+$('vid#bg').fadeIn();
+
+}else{
+$("img#bg").addClass('showaa').removeClass('hideaa').attr('src',$("#bgurl").val());
+$("video#bg").addClass('hideaa').removeClass('showaa');
+$("html").css('background','url('+$("#bgurl").val()+')');
+}
+
+
+
+}
+backav=0;
+
+  </script>
+  <!--
+<script type="text/javascript">
+var PopAds_SiteID=3321;
+var PopAds_MinimalBid=0.001;
+var PopAds_PopundersPerIP=3;
+var PopAds_AutoPopunder=true;
+var PopAds_Default=false;
+var PopAds_TopmostLayer=false;
+</script>
+ <script type="text/javascript" src="http://popadscdn.net/pop.js"></script>
+!-->
+
+
+<script>setTimeout('removeads()','10000');</script>
+<script>
+var oba;
+    		  $(document).bind('mousewheel', function(event, delta) {
+if(currapp==0&&searching!=1){			  
+         		   var dir = delta > 0 ? 'Up' : 'Down',
+         	       vel = Math.abs(delta);
+				if(dir == 'Up') {
+     prevpage();				}				   
+				if(dir == 'Down') {
+     nextpage();
+				}return false; 
+      		  }});
+			  function openapp(appkey) {
+runapp();
+if ($('iframe').is('.iframe'+appkey)) {
+resume(appkey);
+} else {
+
+
+$.get('app.php',{ appno: appkey}, function(data) {
+	
+if(appkey!=-1){if(currapp!=0){minimize();}appcount=appcount+1;
+var ahsgi=(210+appcount*110);$('.mtk').css('width',(210+appcount*110)+'px');
+$.get('appname/'+appkey+'.txt', function(datab){
+		$('body').append('<iframe class="close iframe'+appkey+'" src="'+data+'" scrolling="yes" frameborder="0" id="appframe" ></iframe>');
+		$("#ra").show(500);
+	$('.mtico.mysettings').after('<div class="mtico mtapp running td'+appkey+'" align="center"><div id="stoptaskbutton" onclick="closeappa('+appkey+')"><img src="minus.png" /></div><span id="adjustment"><img src="icon/'+appkey+'.png"  id="'+appkey+'" ondragstart="startdrag('+appkey+',this)" draggable="true" style="height:70px; width:70px" onclick="resume('+appkey+')"><div id="overflowsucks">'+datab+'</div></span></div>');currapp=appkey;
+$(".iframe"+appkey).addClass('open').removeClass('close');
+$("img#bar").css('opacity','1').removeClass('close').addClass('open');
+	$('#appbg').removeClass('bghidden').addClass('bgshown');
+
+	});	
+}else	{
+
+$('body').append('<iframe class="iframe'+appkey+'" src="http://chromaticcreative.net/php/dash/store.php" scrolling="yes" frameborder="0" style="height:100%; width:100%; z-index:999; position:fixed; top:0px; left:0px " id="appframe" ></iframe>');
+}
+});  }}
+function minimize(){if(currapp==1){renewapps();}	closesiriifopen();exitapp();$("#tbovl").removeClass('ovlshown').addClass('ovlhidden');$("iframe").css("top", "0px"); $('#appbg').removeClass('bgshown').addClass('bghidden');$("#ra").hide(500);$(".iframe"+currapp).removeClass('open').addClass('re').addClass('minimized');$(".td"+currapp).removeClass('running');currapp=0;$("img#bar").css('opacity','0').removeClass('open').addClass('close');}
+function changeapp(){if(currapp==1){renewapps();}		$("#tbovl").removeClass('ovlshown').addClass('ovlhidden');$("iframe").css("top", "0px"); $(".iframe"+currapp).removeClass('open').addClass('minimized').addClass('re');$(".td"+currapp).removeClass('running');}
+function shgiudf(){$('iframe.flip_bottom').removeClass('flip_bottom').removeClass('open').addClass('minimized')}
+function resume(tor){
+if(issiri==1){closesiri();}
+runapp();
+	$('#appbg').removeClass('bghidden').addClass('bgshown');if(currapp!=0){changeapp();}$("img#bar").css('opacity','1').removeClass('close').addClass('open');$("#ra").show(500);$(".iframe"+tor).removeClass('minimized').addClass('open');$(".td"+tor).addClass('running');currapp=tor; $("iframe").css("top", "0px"); }
+
+function closeapp() {if(currapp==1){renewapps();}exitapp(); closesiriifopen();$("#tbovl").removeClass('ovlshown').addClass('ovlhidden');$("iframe").css("top", "0px");$('#appbg').removeClass('bgshown').addClass('bghidden');appcount=appcount-1;var ahsgi=(210+appcount*110);$('.mtk').css('width',(210+appcount*110)+'px');;
+$("#ra").hide(500);
+$(".iframe"+currapp).removeClass('minimize').removeClass('open').addClass('close');
+$(".td"+currapp).addClass('darkhole');
+
+setTimeout("closeframe("+currapp+")",500);
+
+$("img#bar").css('opacity','0').removeClass('open').addClass('close');
+
+currapp=0;
+
+resize();
+iframeloadcount=0;
+  }	  
+function tableclick(){
+$("#tbovl").removeClass('ovlshown').addClass('ovlhidden');$("iframe").css("top", "0px"); $('#appbg').removeClass('bgshown').addClass('bghidden'); 		 $("#mt").removeClass('mto').addClass('mtc')
+   $("#wrapper").removeClass('ctr');ob=0;$("#tbovl").removeClass('ovlshown').addClass('ovlhidden');$("iframe").css("top", "0px"); 
+
+};
+function closeappa(tocloseappid) {
+if(tocloseappid==1){console.log('line575');renewapps();}$("#tbovl").removeClass('ovlshown').addClass('ovlhidden');console.log('line575.2');
+if(tocloseappid==currapp){console.log('line576');currapp=0;exitapp();$("iframe").css("top", "0px");$('#appbg').removeClass('bgshown').addClass('bghidden');$("img#bar").css('opacity','0').removeClass('open').addClass('close');}
+if(appcount==1){
+
+closeapp();console.log('line578');
+}else{
+ appcount=appcount-1;
+}console.log('line579');
+var ahsgi=(210+appcount*110);$('.mtk').css('width',(210+appcount*110)+'px');
+$("#ra").hide(500);console.log('line581');
+$(".iframe"+tocloseappid).removeClass('minimize').removeClass('open').addClass('close');
+$(".td"+tocloseappid).addClass('darkhole')
+setTimeout("closeframe("+tocloseappid+")",500);
+
+resize();
+iframeloadcount=0;
+console.log('line588');
+  }	  
+function ra(){window.open('http://chromaticcreative.net/php/dash/report.php?r='+currapp)}
+  function closeframe(currapp){$(".iframe"+currapp).remove();
+$(".td"+currapp).remove();}
+function openset() {
+if(issiri==1){closesiri();}
+$("#ajaxframe").removeClass('close').addClass('open');
+  }	
+function closeset() {
+if(savebg==0){alertcontent('iPad Simulator','0','Are you sure? You haven\'t save your background','2','Close','Save and Close','0','savebg=1;closealert();closeset();origbg();','0','savebg=1;closealert();closeset();$.get("savebg.php",{ q:$("#bgurl").val(), u:"wvanheemstra"}, function(dataa) {  savebg=1;});');return}
+$("#ajaxframe").removeClass('open').addClass('close');
+  }	 
+  $(document).mousemove(function(e){
+if(e.pageY>=$("html").height()-15) { $("iframe").css("top", "-107px"); $("#wrapper").addClass('ctr');$("#mt").removeClass('mtc').addClass('mto');ob=1;oba=1;if(currapp!=0){$("#tbovl").addClass('ovlshown').removeClass('ovlhidden');}return false}
+if((e.pageY<=$("html").height()-107)&&oba==1) { $("iframe").css("top", "0px"); $("#wrapper").removeClass('ctr');$("#mt").removeClass('mto').addClass('mtc');$("#tbovl").removeClass('ovlshown').addClass('ovlhidden');ob=0;oba=0;return false}
+if(e.pageY<=45) { $("#noti").addClass('pre').removeClass('hidden');}else{if(opennoti!=1){$("#noti").addClass('hid').removeClass('pre');}}
+
+});
+
+function ods(){
+$('#uploadbox').removeClass('ovlhidden').addClass('ovlshown');
+$('#uploadboxicon').removeClass('ovlhidden').addClass('ovlshown');
+
+}
+function odd(){
+$('#uploadbox').removeClass('ovlshown').addClass('ovlhidden');
+$('#uploadboxicon').removeClass('ovlshown').addClass('ovlhidden');
+}
+function search(){
+if($('input#searchbox').val()!=""){
+         $('#searchresult').addClass('show').removeClass('hide');
+         $('#ad200250').addClass('hide').removeClass('show');
+   $('#searchresult').html('<div style="color: #999;text-shadow: white 1px 1px 0px;font-size:40px; position:relative; top:200px; ">Loading</div>');
+$.post("homesearch.php", { q:$('input#searchbox').val()  },
+   function(data) {
+   $('#searchresult').html(data);
+   if(data=="<ul id='searchlist'></ul>"){ $('#searchresult').html('<div style="color: #999;text-shadow: white 1px 1px 0px;font-size:40px; position:relative; top:200px; ">No Results</div>');}
+   });
+   }else{
+      $('#searchresult').html('').addClass('hide').removeClass('show');
+	           $('#ad200250').addClass('show').removeClass('hide');
+searching=0
+   }
+}
+function nowsearch(){
+searching=1;
+}
+function notsearching(){
+searching=0;
+}
+function searchstore(q){
+$('input#searchbox').val("in:store "+q);
+search();
+}
+function searchstoredes(q){
+$('input#searchbox').val("in:store desc "+q);
+search();
+}
+function installapp(q){
+alertcontent('iPad Simulator','0','You are going to install new apps. We need to proceed to the app store and close all the running apps. Are you sure you want to proceed?','2','No','Yes','0','closealert();','0','location.href="store.php?appinstall='+q+'"');
+}
+function changeanibg(v){
+
+//if(installedexpan==1){alertcontent('iPad Simulator','0','You need an expansion pack to enjoy this exclusive content<br> Refresh the page after installing.','2','Fine...','Lets Go!','0','closealert();','0','window.open("vidbg.crx");'); return}
+if(v==5){v=4;}
+$('#bgurl').val('vidbg/'+v+'.mp4');
+previewbg();
+}
+
+intav=self.setInterval("clockt()",30000);
+function clockt()
+  {
+$.post("http://chromaticcreative.net/chat/3/tracker.php?noti="+noti,function(data) {
+if(noti==1){ 
+$('#onlineusers').html(data);
+$('#ucount').html(data.match(/conversation/g).length);
+
+  }  });  }
+var tdmo=''
+</script>
+
+<style>
+#searchbox{background:url(inputs.png) no-repeat,#FFF; background-position:5px 5px,0 0;-webkit-user-select: text;font-family:MPL; font-size:22px; width:300px; border-radius:22px;padding-left:30px;padding-right:20px; box-shadow:inset 0 0 2px #333,0 0 4px #333;outline:none; -webkit-transition: all .4s ease-in-out;border:none;}
+#searchbox:hover{box-shadow:inset 0 0 4px #069;outline:none; -webkit-transition: all .4s ease-in-out}
+#searchbox:focus{box-shadow:inset 0 0 6px #0BF;outline:none; -webkit-transition: all .4s ease-in-out;}
+#searchresult{overflow:scroll;background-color:#E4E5E7; border-radius:20px; height:500px; width:600px; box-shadow: 0 0 10px #666; }
+#searchresult.hide{opacity:0;-webkit-transition: all .4s ease-in-out;pointer-events:none; height:0px}
+#searchresult.show{opacity:1;-webkit-transition: all .4s ease-in-out;pointer-events:all; height:500px}
+#ad200250.hide{opacity:0;-webkit-transition: all .4s ease-in-out;pointer-events:none; height:0px}
+#ad200250.show{opacity:1;-webkit-transition: all .4s ease-in-out;pointer-events:all; height:250px;margin-bottom:150px; margin-top:100px;}
+
+#searchlist li:nth-child(2n){background: #E4E5E6;width: 100%;line-height: 50px;font-weight: bold;font-size: 20px;text-indent: 10px;margin: 0 !important;padding: 0 !important;border-bottom: 1px solid #B6B8B7;border-top: 1px solid #FEFFFF;}
+#searchlist li:nth-child(2n+1){background: #D0D1D5;width: 100%;line-height: 50px;font-weight: bold;font-size: 20px;text-indent: 10px;margin: 0 !important;padding: 0 !important;border-bottom: 1px solid #B6B8B7;border-top: 1px solid #FEFFFF;}
+#searchlist li:hover{background: #BBB;width: 100%;line-height: 50px;font-weight: bold;font-size: 20px;text-indent: 10px;margin: 0 !important;padding: 0 !important;border-bottom: 1px solid #B6B8B7;border-top: 1px solid #FEFFFF;}
+#searchlist li:active{background: #AAA;width: 100%;line-height: 50px;font-weight: bold;font-size: 20px;text-indent: 10px;margin: 0 !important;padding: 0 !important;border-bottom: 1px solid #B6B8B7;border-top: 1px solid #FEFFFF;}
+#searchlist li img{height:40px ;width:40px;float:left;border-right:1px solid white;padding:5px;}
+#searchlist li{color:#000;font-family:Helvetica,Arial,Sans-serif; align:left;}
+#apptitle{float:left;font-family:Helvetica,Arial,Sans-serif; align:left;}
+#des{float:left;font-family:Helvetica,Arial,Sans-serif; align:left;font-size:8px; color:#555;width:500px; overflow:hidden;}
+*{font-family:MPL; }
+#ajaxrenewapps{padding:0; margin:0;}
+</style>
+<script language="JavaScript">
+        function highlight(field) {
+        field.focus();
+        field.select();
+		
+}
+function installexpansion(){
+installedexpan++;
+}
+function renewapps(){
+$.get("dashdata.php", function(data){
+$('#ajaxrenewapps').html(data);
+resize();
+});
+$.get("maxpage.php", function(data){
+maxpage=data;
+});
+$.get("pagecount.php", function(data){
+$('#pagecount').html(data);
+gopage(2);});
+
+}
+function addapp(ano){
+$.getJSON('jsonadd.php',{ a:ano}, function(datar) {
+
+
+if(datar.sowhat==1){
+simplealert(datar.content,'App Store');
+  $.get("dashdata.php", function(data){
+$('#ajaxrenewapps').html(data);
+resize();
+});
+$.get("maxpage.php", function(data){
+maxpage=data;
+gopage(parseInt(maxpage)+1);$('#sbg').addClass('ovlhidden').removeClass('ovlshown');
+});
+$.get("pagecount.php", function(data){
+$('#pagecount').html(data);
+
+notsearching();
+  });
+
+ }
+ else{simplealert(datar.content,'App Store');
+} });
+ }
+
+</script>
+<div id="ajaxrenewapps">
+  <table id="wrapper" onclick="tableclick()" style="width:200%">
+ <tr>
+ 
+  <td class="icontable" style="z-index:10;position:relative">
+  <center>
+  <input type="text" id="searchbox" onkeyup="search()" onClick='highlight(this);' placeholder="Search iPad Simulator" onsubmit="return false" /><br><br><br>
+   <div id="ad200250" class="show" style="">
+   <table style="word-wrap: break-word;padding:0px; margin:0px;" id="ads"><tbody><tr><td><center><iframe id="forsale" style="height: 346px; width: 743px; border: 1px dashed rgb(0, 0, 0); font-family: MPLB; font-size: 18px; padding: 0px; margin: 0px; top: 0px; background-attachment: initial; background-color: initial; background-origin: initial; background-clip: initial;" src="forsale.php"></iframe></center><br>To contact us, send an eMail to chromaticcreative@gmail.com . We would reply you as soon as possible.<br><center><iframe src="http://www.facebook.com/plugins/like.php?app_id=160493954027182&amp;href=https://chrome.google.com/webstore/detail/ipad-simulator/biamdeofchcbekmcakjcfnpdipmkmkbb&amp;send=true&amp;layout=button_count&amp;width=78&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=20" scrolling="no" frameborder="0" style="border: none; overflow: hidden; width: 128px; height: 20px; top: 0px;" allowtransparency="true"></iframe><a href="http://www.facebook.com/sharer/sharer.php?u=http://chromaticcreative.net/php/dash/" target="_blank"><img src="fbs.png"></a><div class="g-plusone" data-size="medium" callback="plusone" data-href="https://chrome.google.com/webstore/detail/biamdeofchcbekmcakjcfnpdipmkmkbb"></div></center></td></tr></tbody></table>
+   </div>
+
+ <div id="searchresult" class="hide" onmouseout="notsearching()" onmouseover="nowsearch()" >
+  </div>
+  
+  </center>
+  
+  </td>
+  
+<td class="icontable"><table class="iconholder"><tr><td id="icontd"><center><div id="icon" onmousedown="wantedit()" style="background-image:url(icon/0.png)" onclick="openset(0)"></div><p id="title">Settings</p></center></td><td id="icontd"><center><div id="icon" onmousedown="wantedit()" style="background-image:url(icon/1.png)" onclick="openapp(1)"></div><p id="title">Chromatic App Cloud</p></center></td><td id="icontd"><center><div id="icon" onmousedown="wantedit()" style="background-image:url(icon/237.png)" onclick="openapp(237)"></div><p id="title">Fetch.It!</p></center></td><td id="icontd"><center><div id="icon" onmousedown="wantedit()" style="background-image:url(icon/52.png)" onclick="openapp(52)"></div><p id="title">Plant vs Zombies</p></center></td></tr><tr><td id="icontd"><center><div id="icon" onmousedown="wantedit()" style="background-image:url(icon/9.png)" onclick="openapp(9)"></div><p id="title">Angry Birds</p></center></td><td id="icontd"><center><div id="icon" onmousedown="wantedit()" style="background-image:url(icon/109.png)" onclick="openapp(109)"></div><p id="title">Wikipedia</p></center></td><td id="icontd"><center><div id="icon" onmousedown="wantedit()" style="background-image:url(icon/195.png)" onclick="openapp(195)"></div><p id="title">Bejeweled</p></center></td><td id="icontd"><center><div id="icon" onmousedown="wantedit()" style="background-image:url(icon/15.png)" onclick="openapp(15)"></div><p id="title">Free App Alert</p></center></td></tr><tr><td id="icontd"><center><div id="icon" onmousedown="wantedit()" style="background-image:url(icon/196.png)" onclick="openapp(196)"></div><p id="title">Simple Note</p></center></td><td id="icontd"><center><div id="icon" onmousedown="wantedit()" style="background-image:url(icon/4.png)" onclick="openapp(4)"></div><p id="title">Grooveshark</p></center></td><td id="icontd"><center><div id="icon" onmousedown="wantedit()" style="background-image:url(icon/157.png)" onclick="openapp(157)"></div><p id="title">Bitty Browser</p></center></td>
+Warning: file_get_contents(appname/.txt): failed to open stream: No such file or directory in /volume1/web/php/dash/dashbeta.php on line 780
+<td id="icontd"><center><div id="icon" onmousedown="wantedit()" style="background-image:url(icon/.png)" onclick="openapp()"></div><p id="title"></p></center></td></tr></tr></table></td>  
+  
+
+  </tr>
+  </table>
+  </div>
+  <div class="close" style="top:0px;-webkit-user-select: text; left:0px;z-index:1000; position:fixed;background-color:rgba(0,0,0,0.5)" id="ajaxframe">
+
+  <div style="border:solid 2px #000; background-color:#FFF;color:#000; height:300px; margin-top:20%;margin-left:20%; margin-right:20%; text-align:center "><a href="javascript:closeset();"><img src="closeset.png"  align="right" style="position:relative; bottom:20px; left:20px; text-align:right"/></a><br /><h1 style='color:#000'>Set Wallpaper</h1><input type="text" id="bgurl" value="http://" onkeyup="previewbg()" style="width:80%;-webkit-user-select: text;  font-size:16px;"/><br />
+<font color="#000"> Animated wallpaper, slide and select</font><input id="slider1" type="range" min="1" max="8" step="1" onchange="changeanibg(this.value)" />
+<br>Dont forget to<iframe src="http://www.facebook.com/plugins/like.php?app_id=160493954027182&amp;href=http://chromaticcreative.net/php/dash/&amp;send=true&amp;layout=button_count&amp;width=78&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=20" scrolling="no" frameborder="0" style="border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; border-image: initial; overflow-x: hidden; overflow-y: hidden; width: 78px; height: 20px;  " allowtransparency="true"></iframe>,<a href="http://twitter.com/share" class="twitter-share-button" data-url="https://chrome.google.com/webstore/detail/biamdeofchcbekmcakjcfnpdipmkmkbb" data-text="Try this out! An iPad in your Google Chrome! It's BEAUTIFUL!" data-count="horizontal">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>and<g:plusone href="https://chrome.google.com/webstore/detail/biamdeofchcbekmcakjcfnpdipmkmkbb"></g:plusone><!---<iframe src="http://chromaticcreative.net/include/ad.php?flatter=1&iframe=1" scrolling='no' frameborder='0' width='93' height='20'></iframe>!--->
+<br><button onclick="savebgargh()">Save</button><a href="javascript:backd()">Default</a><br />
+<font color="#000000" style="-webkit-user-select: text;">You could also drag and drop image from computer to this app to chage background</font>
+<br />
+<a href="#" target="_self" onclick="top.location.href='logout.php';">Logout</a><br /><br />
+<font color="#000000" style="-webkit-user-select: text;">Highlight text below to see username and password</font>
+<div  style="-webkit-user-select: text;color:#FFF;"><br />Username:wvanheemstra<br />
+Password: </div>
+</div>
+<br />
+<br />
+
+</div></div>
+  <div id="pagecount" class="show"><center><a href="javascript:gopage(1)" id="pagenav" class="searchpage 1 nonactive">&nbsp;</a><a href="javascript:gopage(2)" id="pagenav" class="2 nonactive">&nbsp;</a></center></div>
+<div style="position:fixed; top:0px; left:0px;-webkit-transition: all 0.5s ease-in-out; z-index:9999;  background-color:#000" id="fo" class="foh"></div>
+
+
+
+
+    <style>
+	.foh{height:0%; width:100%;opacity:0;-webkit-transition: all 0.5s ease-in-out; }
+	.fos{ height:100%; width:100%; opacity:1;-webkit-transition: all 0.5s ease-in-out;}
+	</style>
+ <script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17540696-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+    <script> 
+	
+   function startdrag(appkey,a) {
+dragkey=appkey; dragitem=a.id;    }
+ 
+    function DropHandler(target, e) {
+closeappa(dragkey);
+    }
+    </script>  <style>iframe.fb_ltr { margin-bottom:100px;}.mtc{height:0px;  }.mto{height:112px;}.mtico #adjustment{position:relative; bottom:10px;z-index:6001}
+	.mtico{ height:110px; width:100px; text-align:center; vertical-align:middle;text-align: center; overflow:hidden; white-space:nowrap;text-overflow: ellipsis; }
+	#overflowsucks{ height:20px;  padding:0; margin:0;text-align:center; vertical-align:middle;text-align: center; position:relative;white-space: nowrap;	overflow: hidden;	text-overflow: ellipsis; }
+	
+	.myico>img{ height:70px; width:70px}.running>img{box-shadow:0 0 7px #FFF}</style>
+  <div style="position:fixed; bottom:0px; left:0px;-webkit-transition: all 0.8s ease-in-out; z-index:6000;  background-color:#000; background-image:url(mtbg.jpg),url(gradientslide.png);  width:100%;  box-shadow:inset 0 0 5px #000" id="mt" class="mtc" onclick="console.log('checkdropvoided')">
+<table align="center" style="position:relative; bottom:20px;" id="likecommentbox" width="500">
+<tr><td colspan="2"  height="50"><iframe src="http://www.facebook.com/plugins/like.php?app_id=160493954027182&amp;href=http://chromaticcreative.net/php/dash/&amp;send=false&amp;layout=standard&amp;width=222&amp;show_faces=false&amp;action=like&amp;colorscheme=dark&amp;font=arial&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:222px; height:50px;" allowTransparency="true"></iframe></td><td valign="top"><a href="http://www.facebook.com/sharer/sharer.php?u=https://chrome.google.com/webstore/detail/dmgmndjdneimbhlpahdbgccpjajafigh" target="_blank"><img src="fbs.png"  /></a></td><td rowspan="1"><button onclick="window.open('https://chrome.google.com/webstore/detail/dmgmndjdneimbhlpahdbgccpjajafigh')">Improvements<br />Rate us</button>
+</td></tr>
+<tr><td>
+<g:plusone href="https://chrome.google.com/webstore/detail/biamdeofchcbekmcakjcfnpdipmkmkbb"></g:plusone>
+</td><td><a href="http://twitter.com/share" class="twitter-share-button" data-url="https://chrome.google.com/webstore/detail/biamdeofchcbekmcakjcfnpdipmkmkbb" data-text="Try this out! An iPad in your Google Chrome! It's BEAUTIFUL!" data-count="horizontal">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></td><td rowspan="1"><button id="ra" onclick="ra()">Report This App</button>
+</td>
+
+</tr></table>
+
+<script>
+var issiri=0;
+var blurrable=0;
+var siriresultcount=0;
+var iamtalking=0;
+var siriresultcountz=0;
+var sirireply=document.getElementById("sirirespond");
+var currentquestion;
+var searchcount;
+var qwikied=0;
+var ytisfaster=0;
+/*SIRI Got Data*/
+function checkdrop(){
+	if(recognizing==0){document.getElementById("siridrop").play();}
+	//document.getElementById("siridrop").play();
+}
+function siritextsubmit(){$('#sirimic').val($('#siritextcommand').val()); siriinput();}
+function siriinput(){
+	
+
+
+	
+searchcount=0;
+if($('#sirimic').val()!=""){
+	
+	document.getElementById("siriend").play();issiri=1;iamtalking=0;
+	var isay=$('#sirimic').val();
+$('#sirimic').val('');$('#sirimic').blur();
+siriresultcount++;
+$('#sirihelp').slideUp();
+$('#siriconversation').slideDown();
+qwikied=0;ytisfaster=0;
+if(siriresultcount>1){
+$('#siriconversation').remove();
+$('#mt').append('<div id="siriconversation"></div>');
+}else{
+$('#mt').append('<div id="siriconversation"></div>');
+}
+
+$('#siriconversation').append('<div id="isay" align="right">'+isay+'</div>');
+var decideaction=0;
+var siriloadphrase;
+var isaylc=isay.toLowerCase();
+var unsolvedlocally=true
+//if(isaylc.indexOf("open ") != -1){decideaction=1;siriloadphrase="Preparing your task";}
+//if(isaylc.indexOf("launch ") != -1){decideaction=1;siriloadphrase="Preparing your task";}
+//if(isaylc.indexOf("run ") != -1){decideaction=1;siriloadphrase="Preparing your task";}
+//if(isaylc.indexOf("play") != -1){if(isay.indexOf("music") != -1){decideaction=3;siriloadphrase="Preparing some music";}if(isay.indexOf("game") != -1){decideaction=3;siriloadphrase="Preparing some games for you.";}}
+//if(isaylc.indexOf("weather") != -1){decideaction=2;siriloadphrase="Gathering Information for you";}
+//if(isaylc.indexOf("setting")!=-1){decideaction=4;}
+//if(isaylc.indexOf("siri")!=-1){decideaction=5;}
+//if(isaylc.indexOf("help")!=-1){decideaction=6;}
+//if(decideaction==0){siriloadphrase="Please hold on. I am finding some information for you.";}
+
+							
+
+							if(unsolvedlocally){
+$.post("siri.php",{ query:isay, gdt: '1' }, function(data) {
+	if(data=='0'){
+	$.post("strip.php",{ tostrip:isay}, function(dataaa) {
+						$.getJSON("qwikiproxy.php?q="+dataaa, function(datazz){
+							var qwikijsondata=datazz;
+							var exportqwikiline="";
+							var exportqwikilinez="";
+							  for (var i = 0; i < qwikijsondata.length; i++) {
+							  if(i==0){
+								var qwikititle=qwikijsondata[i].title;
+								var qwikitext=qwikijsondata[i].text;
+								var qwikiembedurl=qwikijsondata[i].embed_url;
+								exportqwikiline +="<iframe src='"+qwikiembedurl+"' id='qwikiiframe' scrolling='no' frameborder='none'></iframe>";
+							  }else{
+								var qwikititle=qwikijsondata[i].title;
+								var qwikitext=qwikijsondata[i].text;
+								var qwikiembedurl=qwikijsondata[i].embed_url;
+								exportqwikilinez +="<li onclick='qwikichange(\""+escape(qwikiembedurl)+"\")'>"+qwikititle+"</li>";
+							  }
+							  }
+							  if(i!=0){
+		
+					if(searchcount<1){		
+							document.getElementById("sirirespond").setAttribute('src', 'siri/commonaudio/17.mp3');document.getElementById("sirirespond").play();
+					$('#sirisay').text('Here you go.');
+					$('#siriconversation').append('<p id="slidein" class="sirislide" align="left"><div id="siriresult" style="float:left; display:inline-block" align="left"><div id="qwikiiframe" style="float:left; display:inline-block; width:640px;text-align:center;" >'+exportqwikiline+'</div></p><p id="slidein" class="sirislide" align="left"><div id="asdf" style="float:left; display:inline-block; width:640px;text-align:center;" ><ul id="sirilist">'+exportqwikilinez+'</ul></div></div></p>');
+					searchcount++;
+					}else{ document.getElementById("sirirespond").setAttribute('src', 'siri/commonaudio/24.mp3');document.getElementById("sirirespond").play(); 
+ $('#sirisay').text('We\'ve got some more for you');
+					$('#siriresult').append('<div id="qwikiiframe" style="float:left; display:inline-block; width:640px;text-align:center;" >'+exportqwikiline+'</div><div id="asdf" style="float:left; display:inline-block; width:640px;text-align:center;" ><ul id="sirilist">'+exportqwikilinez+'</ul></div>');
+					}
+					qwikied=1;
+					clearTimeout(sorryspeed);
+							}else{
+					if(ytisfaster==1){
+					reissueyt();
+					}
+							}
+							});
+	});
+	}
+});
+}
+siriloadphrase="Please hold on";decideaction=0;
+
+$('#siriconversation').append('<p id="slidein" class="sirislide"  align="left"><div id="sirisay" class="siritellyouloading">'+siriloadphrase+'</div>');
+
+var sorryspeed= setTimeout('sorryslow()',10000);
+currentquestion=isay;
+for (op=0;op<response.length;op++){
+	console.log(similar_text(response[op][0],isay.toLowerCase()))
+	if(similar_text(response[op][0],isay,1)>95){
+		clearTimeout(sorryspeed);
+ $('#sirisay').text(response[op][1]);
+ document.getElementById("sirirespond").setAttribute('src', 'http://www2.dict.cc/speak.audio.php?type=mp3&&lang=en&text='+encodeURIComponent(response[op][1]));document.getElementById("sirirespond").play(); 
+return false
+		
+	}
+	
+}
+
+$.post("siri.php",{ query:isay}, function(data) {
+clearTimeout(sorryspeed);
+$('#sirisay.siritellyouloading').text(data.title);
+if(data.detail!=""||data.detail!="null"){
+$('#siriconversation').append('<br>'+data.detail+'<br>');
+}
+if(data.audio!=""){
+document.getElementById("sirirespond").setAttribute('src', data.audio);document.getElementById("sirirespond").play();
+}
+if(data.run!=""){eval(data.run);}
+ }, "json");
+ 
+}
+}
+function similar_text(first, second, percent) {
+  //  discuss at: http://phpjs.org/functions/similar_text/
+  // original by: Rafa? Kukawski (http://blog.kukawski.pl)
+  // bugfixed by: Chris McMacken
+  // bugfixed by: Jarkko Rantavuori original by findings in stackoverflow (http://stackoverflow.com/questions/14136349/how-does-similar-text-work)
+  // improved by: Markus Padourek (taken from http://www.kevinhq.com/2012/06/php-similartext-function-in-javascript_16.html)
+  //   example 1: similar_text('Hello World!', 'Hello phpjs!');
+  //   returns 1: 7
+  //   example 2: similar_text('Hello World!', null);
+  //   returns 2: 0
+
+  if (first === null || second === null || typeof first === 'undefined' || typeof second === 'undefined') {
+    return 0;
+  }
+
+  first += '';
+  second += '';
+
+  var pos1 = 0,
+    pos2 = 0,
+    max = 0,
+    firstLength = first.length,
+    secondLength = second.length,
+    p, q, l, sum;
+
+  max = 0;
+
+  for (p = 0; p < firstLength; p++) {
+    for (q = 0; q < secondLength; q++) {
+      for (l = 0;
+        (p + l < firstLength) && (q + l < secondLength) && (first.charAt(p + l) === second.charAt(q + l)); l++)
+      ;
+      if (l > max) {
+        max = l;
+        pos1 = p;
+        pos2 = q;
+      }
+    }
+  }
+
+  sum = max;
+
+  if (sum) {
+    if (pos1 && pos2) {
+      sum += this.similar_text(first.substr(0, pos1), second.substr(0, pos2));
+    }
+
+    if ((pos1 + max < firstLength) && (pos2 + max < secondLength)) {
+      sum += this.similar_text(first.substr(pos1 + max, firstLength - pos1 - max), second.substr(pos2 + max,
+        secondLength - pos2 - max));
+    }
+  }
+
+  if (!percent) {
+    return sum;
+  } else {
+    return (sum * 200) / (firstLength + secondLength);
+  }
+}
+function qwikichange(nas){
+qwikiiframe.location.href=unescape(nas);
+}
+/*SIRI Left area*/
+function siriwrongclick(){}
+/*SIRI focus*/
+function sirifocus(){if($('#sirimic').val()==""){
+document.getElementById("sirirespond").pause();
+nowsearch();issiri=1; $('#mt').animate({height: $(window).height()+'px'}, 500 );
+var sjiogs=setTimeout("hdsiuolghsiudl()",1000);
+ }}
+ function hdsiuolghsiudl(){ $('#mt').addClass('siriopen').css('height','')}
+ function hdsaiuolghsiudl(){ $('#mt').removeClass('siriopen').css('height','')}
+ function closesiri(){ var objDivb = document.getElementById("mt");
+objDivb.scrollTop = 0;$('#mt').animate({height: $(window).height()+'px'}, 500 );
+ var sjiaogs=setTimeout("hdsaiuolghsiudl()",1000);
+ issiri=0;notsearching();
+
+ }
+ 
+ function closesiriifopen(){if(issiri!=0){closesiri();}}
+ function clearsiri(){$('#siriconversation').empty();}
+ function whichButton(event)
+{
+if(event.keyCode==13){sirisendmsg();}
+}
+ function whichButtona(event)
+{
+if(event.keyCode==13){sirisendpm();}
+}
+
+function sirisendmsg(){
+$('#chatpost').val($('#messageconfirmp').text());
+saynow();
+document.getElementById("sirirespond").setAttribute('src', 'siri/commonaudio/12.mp3');document.getElementById("sirirespond").play();
+$('#additionaldiv').html('<div id="sirisay" class="siritellyouloading">Message sent.</div>');
+
+}
+function sirisendpm(){
+$('#chatpost').val('@**'+$('#messageconfirmtitle span.editable').text()+'**@'+$('#messageconfirmp').text());
+saynow();
+document.getElementById("sirirespond").setAttribute('src', 'siri/commonaudio/12.mp3');document.getElementById("sirirespond").play();
+$('#additionaldiv').html('<div id="sirisay" class="siritellyouloading">Message sent.</div>');
+}
+function sirireturnmsg(){
+$("#additionaldiv").html('<div id="sirisay" class="siritellyouloading">Okay, I won\'t send it</div>');
+document.getElementById("sirirespond").setAttribute('src', 'siri/commonaudio/11.mp3');document.getElementById("sirirespond").play();
+}
+
+function showuserlist(){
+$('body').append('<div id="floatinguserlist"></div>');
+$.post("http://chromaticcreative.net/chat/3/trackerget.php?noti=1",function(data) {
+var p = $("#messageconfirmtitle span.editable");
+var position = p.position();
+$('#floatinguserlist').html(data).css('left',position.left+35 ).css('top',position.top+35 );
+    })
+}
+function destroyuserlist(){
+$('#floatinguserlist').slideUp().remove();
+}
+ function findlastnotify(){
+ if(lastnotifiedby==""){
+ document.getElementById("sirirespond").setAttribute('src', 'siri/commonaudio/11.mp3');document.getElementById("sirirespond").play();
+  $("#messageconfirmtitle span.editable").text('Please Fill In');
+ }else{
+ $("#messageconfirmtitle span.editable").text(lastnotifiedby);
+ }
+
+ }
+ 
+ function removeapp(ano){
+$.getJSON('singleremove.php',{r:ano}, function(datar) {
+if(datar==1){
+  $.get("dashdata.php", function(data){
+$('#ajaxrenewapps').html(data);
+resize();
+});
+$.get("maxpage.php", function(data){
+maxpage=data;
+gopage(parseInt(maxpage)+1);$('#sbg').addClass('ovlhidden').removeClass('ovlshown');
+});
+$.get("pagecount.php", function(data){
+$('#pagecount').html(data);
+
+  });
+ document.getElementById("sirirespond").setAttribute('src', 'http://www2.dict.cc/speak.audio.php?type=mp3&&lang=en&text=Item Removed.');document.getElementById("sirirespond").play();
+}
+} );
+ }
+ 
+ function readmetime(){
+
+	var d = new Date();
+	var curr_hour = d.getHours();
+	var curr_min = d.getMinutes();
+	if(curr_min < 10)
+	{
+		curr_min = "0" + curr_min;
+	}
+		if(curr_hour > 12)
+	{
+		curr_hour = curr_hour-'12';
+	}
+	
+	
+	
+ $('#sirisay').text('The time now is '+$('p#time').text());
+ document.getElementById("sirirespond").setAttribute('src', 'http://www2.dict.cc/speak.audio.php?type=mp3&&lang=en&text=The time now is '+curr_hour+', '+curr_min+'.');document.getElementById("sirirespond").play(); 
+ }
+ function initsearchresult(q){
+ 
+
+	
+ if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.open("GET","siri/wfa/xml/"+q+".xml",false);
+xmlhttp.send();
+xmlDoc=xmlhttp.responseXML; 
+var jniosag=0;
+var xmlresult="<table id='wfacontent' border='1'>";
+var x=xmlDoc.getElementsByTagName("pod");
+
+if(x.length>0){
+for (i=0;i<x.length;i++)
+  { 
+  xmlresult+="<tr><td>";
+  xmlresult+=x[i].getElementsByTagName("markup")[0].childNodes[0].nodeValue;
+  xmlresult+="</td></tr>";
+  jniosag++;
+  }
+  }else{
+var x=xmlDoc.getElementsByTagName("didyoumeans");
+xmlresult+='<ul id="sirilist">';
+for (iz=0;iz<x.length;iz++)
+  { 
+  xmlresult+='<li onclick="directsubmitsiri(\''+x[iz].getElementsByTagName("didyoumean")[0].childNodes[0].nodeValue+'\')">'+x[iz].getElementsByTagName("didyoumean")[0].childNodes[0].nodeValue+'</li>';
+  jniosag++;
+  }
+xmlresult+='</ul>';  
+  if(jniosag!=0){
+ document.getElementById("sirirespond").setAttribute('src', 'siri/commonaudio/19.mp3');document.getElementById("sirirespond").play(); 
+ $('#sirisay').text('We can\'t find what '+currentquestion+' is, but do you mean this?');
+ }
+ }
+ 
+ xmlresult+="</table>";
+
+ if(jniosag==0){
+playyoutube(currentquestion,'','',1);
+ document.getElementById("sirirespond").setAttribute('src', 'siri/commonaudio/23.mp3');document.getElementById("sirirespond").play(); 
+ $('#sirisay').text('We are searching on an alternitive source');
+
+ }else{
+ if(searchcount<1){
+$('#siriconversation').append('<p id="slidein" class="sirislide" align="left"><div id="siriresult" style="float:left; display:inline-block" align="left">'+xmlresult+'</div></p><br>');
+searchcount++
+}else{
+$('#siriresult').append('<br>'+xmlresult);
+ document.getElementById("sirirespond").setAttribute('src', 'siri/commonaudio/24.mp3');document.getElementById("sirirespond").play(); 
+ $('#sirisay').text('We\'ve got some more for you');
+}
+
+}
+ }
+ function sorryslow(){
+  document.getElementById("sirirespond").setAttribute('src', 'siri/commonaudio/18.mp3');document.getElementById("sirirespond").play(); 
+ $('#sirisay').text('Sorry, but we are taking a little bit more time on your query, please be patient.');
+ 
+ }
+ function openPopup(url) {
+	window.open(url, "popup_id", "scrollbars,resizable,width=300,height=400");
+	return false;
+	}
+	function searchme(){
+	window.open('http://www.google.com.hk/search?q='+encodeURIComponent(currentquestion));
+	}
+	var vidsrchtmp,vidcattmp;
+function showMyVideos(data) {
+
+  var feed = data.feed;
+  var entries = feed.entry || [];
+  var exportsrc="";
+  var imgsrc="";
+  for (var i = 0; i < entries.length; i++) {
+  
+  if(i==0){
+	var entry = entries[i];
+    var videotitle = entry.title.$t;
+    var videoframe = entry.media$group.media$content["0"].url;
+		if(entry.media$group.media$content["0"].yt$format=='5'){
+		    var vidthumb = entry.media$group.media$thumbnail["0"].url;
+
+imgsrc+='<div style="padding:0 ; margin:0;font-size:18px;height:80px;display:inline-block; width:640px; background:url('+vidthumb+') no-repeat;background-size:cover; box-shadow:inset 0 0 30px #FEE,inset 0 0 15px #000; background-position:50% 30%; text-shadow:0 0 2px #000, 0 0 5px #000, 0 0 15px #99B;-webkit-animation-name: fadein;-webkit-animation-duration: 0.5s;cursor:pointer;" onclick="changevideo(\''+videoframe+'&autoplay=1\',\''+escape(videotitle)+'\')"><table style="height:100%;width:100%;vertical-align:middle;background:rgba(0,0,0,0.3)"><tr style="height:100%;width:100%;vertical-align:middle; text-align:center;"><td style="height:100%;width:100%;vertical-align:middle; text-align:center;">'+videotitle+'</td></tr></table></div>';				
+		exportsrc += '<h2  class="ytsiri">'+videotitle+'<img src="new_window.gif" style="cursor:pointer; box-shadow:0 0 3px #FFF; " onclick="window.open(\''+videoframe+'\')"/></h2><iframe src="'+ videoframe+'&autoplay=1" id="sirivideo" frameborder="0" scrollable="0" ></iframe></li>';
+		}
+	}else{
+if(i==1){exportsrc += '<div id="sirilist" class="ytsiridiv"></div><ul id="sirilist" class="ytsiri">';}
+	var entry = entries[i];
+    var videotitle = entry.title.$t;
+    var videoframe = entry.media$group.media$content["0"].url;
+    var vidthumb = entry.media$group.media$thumbnail["0"].url;
+		if(entry.media$group.media$content["0"].yt$format=='5'){
+		if(i<5){
+		console.log('y'+i)
+imgsrc+='<div style="padding:0 ; margin:0;font-size:18px;height:100px;display:inline-block; width:320px; background:url('+vidthumb+') no-repeat;background-size:cover; box-shadow:inset 0 0 30px #FEE,inset 0 0 15px #000; background-position:center; text-shadow:0 0 2px #000, 0 0 5px #000, 0 0 15px #99B;-webkit-animation-name: fadein;-webkit-animation-duration: 0.5s;cursor:pointer;" onclick="changevideo(\''+videoframe+'&autoplay=1\',\''+escape(videotitle)+'\')"><table style="height:100%;width:100%;vertical-align:middle;background:rgba(0,0,0,0.3)"><tr style="height:100%;width:100%;vertical-align:middle; text-align:center;"><td style="height:100%;width:100%;vertical-align:middle; text-align:center;">'+videotitle+'</td></tr></table></div>';				
+		console.log(imgsrc);
+		}else{
+		exportsrc += '<li style="-webkit-animation-name: fadein;background:rgba(197,42,38,0.1);-webkit-animation-duration: 0.5s;font-size:16px;" onclick="changevideo(\''+videoframe+'&autoplay=1\',\''+escape(videotitle)+'\')">'+videotitle+'</li>';
+		}
+		}
+	}
+  }
+  if(i!=0){
+  if(searchcount<1){
+
+  exportsrc += '</ul></div><br></p>';
+ $('#siriconversation').append('<p id="slidein" class="sirislide" align="left"><div id="siriresult" style="float:left; display:inline-block; width:640px;text-align:center;" ><center>'+exportsrc);
+   $('#sirilist.ytsiridiv').append(imgsrc);
+searchcount++ }else{
+   exportsrc += '</ul>';
+		console.log(imgsrc);
+
+  $('#siriresult').append(exportsrc);
+  $('#sirilist.ytsiridiv').append(imgsrc);
+ document.getElementById("sirirespond").setAttribute('src', 'siri/commonaudio/24.mp3');document.getElementById("sirirespond").play(); 
+ $('#sirisay').text('We\'ve got some more for you');
+ }
+   document.getElementById("sirirespond").setAttribute('src', 'siri/commonaudio/17.mp3');document.getElementById("sirirespond").play(); 
+ $('#sirisay').text('Okay,here you go.');
+
+  }else{
+ if(searchcount==0){
+  document.getElementById("sirirespond").setAttribute('src', 'siri/commonaudio/20.mp3');document.getElementById("sirirespond").play(); 
+ $('#sirisay').text('Sorry, but there is not result or alternitive for your topic, should I Google that for you?');
+xmlresult='<p id="slidein" class="sirislide" align="left"><div id="siriresult" style="float:left; display:inline-block; width:640px;text-align:center;" ><ul id="siriulhori" style="width:640px"><li onclick="searchme();">Yes</li><li onclick="clearsiri()">No</li></ul></div></p>';
+ $('#siriconversation').append(xmlresult);
+
+}  }
+       	$.getJSON("vmoproxy.php?q="+encodeURIComponent(vidsrchtmp),   function(davav){
+		var i=1;
+			  for (var i = 0; i < davav.Camideo.videos.length; i++) {
+			  console.log(i)
+			var turl=davav['Camideo'].videos[i].embedCode;
+			 var ttit=davav['Camideo'].videos[i].title;
+			 var tvid=davav['Camideo'].videos[i].videoId;
+			 var tvimg;
+
+$('#sirilist.ytsiri').append('<li id="videoid'+tvid+'" style="font-size:16px;-webkit-animation-name: fadein;background:rgba(68,187,255,0.1);-webkit-animation-duration: 0.5s;" onclick="changevideo(\''+turl+'\',\''+escape(ttit)+'\')">'+ttit+'</li>');				
+				
+if(i<4){
+$.getJSON('http://www.vimeo.com/api/v2/video/' + tvid + '.json?callback=?', {format: "json"}, function(data) {
+data['0'].id
+$('#videoid'+data['0'].id).remove();
+$('#sirilist.ytsiridiv').append('<div style="padding:0 ; margin:0;font-size:18px;height:100px;display:inline-block; width:320px; background:url('+data[0].thumbnail_medium+') no-repeat;background-size:cover; box-shadow:inset 0 0 30px #EEF,inset 0 0 15px #000; background-position:center; text-shadow:0 0 2px #000, 0 0 5px #000, 0 0 15px #99B;-webkit-animation-name: fadein;-webkit-animation-duration: 0.5s;cursor:pointer;" onclick="changevideo(\'http://player.vimeo.com/video/'+data['0'].id+'\',\''+escape(data['0'].title)+'\')"><table style="height:100%;width:100%;vertical-align:middle;background:rgba(0,0,0,0.3)"><tr style="height:100%;width:100%;vertical-align:middle; text-align:center;"><td style="height:100%;width:100%;vertical-align:middle; text-align:center;">'+data['0'].title+'</td></tr></table></div>');				
+});}
+				
+				}
+			  });
+			  
+			  
+			  if(vidcattmp!=""){
+	       	$.getJSON("vmoproxy.php?t=s&q="+encodeURIComponent(vidsrchtmp),   function(davav){
+		var i=1;
+			  for (var i = 0; i < davav.Camideo.videos.length; i++) {
+			  console.log(i)
+			var turl=davav['Camideo'].videos[i].link;
+			 var ttit=davav['Camideo'].videos[i].title;
+			 var tauth=davav['Camideo'].videos[i].author;
+			 var tvid=davav['Camideo'].videos[i].videoId;
+			 var tvimg;
+
+$('#sirilist.ytsiri').prepend('<li id="scid'+tvid+'" style="font-size:16px;-webkit-animation-name: fadein;background:rgba(250,160,30,0.1);-webkit-animation-duration: 0.5s;" onclick="changevideo(\'http://p1.soundcloud.com/player.swf?url='+turl+'&auto_play=true&player_type=artwork&color=0066cc\',\''+escape(ttit)+'\')">'+ttit+' - '+tauth+'</li>');				
+if(i<4){
+$.getJSON('http://api.soundcloud.com/tracks/'+tvid+'.json?client_id=fa6a2f393fb7dd04b5f78535c5e527f8&callback=?', {format: "json"}, function(data) {
+
+$('#scid'+data.id).remove();
+var urimg=data.user.avatar_url;
+var wvimg=data.waveform_url;
+var aturl=data.artwork_url;
+
+var sctn=aturl;
+if(aturl==null){
+	if(urimg.indexOf("default_avatar")){
+		var sctn=wvimg
+	}else{
+		var sctn=urimg
+	}
+}
+
+$('#sirilist.ytsiridiv').append('<div style="padding:0 ; margin:0;font-size:18px;height:100px;display:inline-block; width:320px; background:url('+sctn+') no-repeat;background-size:cover; box-shadow:inset 0 0 30px rgba(250,160,30,0.2),inset 0 0 15px #000; background-position:center; text-shadow:0 0 2px #000, 0 0 5px #000, 0 0 15px #99B;-webkit-animation-name: fadein;-webkit-animation-duration: 0.5s;cursor:pointer;" onclick="changevideo(\'http://p1.soundcloud.com/player.swf?url='+data.permalink_url+'&auto_play=true&player_type=artwork&color=0066cc\',\''+escape(data.title)+'\')"><table style="height:100%;width:100%;vertical-align:middle;background: rgba(0,0,0,0.3);"><tr style="height:100%;width:100%;vertical-align:middle; text-align:center;"><td style="height:100%;width:100%;vertical-align:middle; text-align:center;">'+data.title+' - '+data.user.username+'</td></tr></table></div>');				
+});}
+
+				
+				}
+			  });
+			  }
+			  
+			  
+} 
+function playyoutube(t,s,c,d){
+vidsrchtmp=t;
+vidcattmp=c;
+if(c!=""){c="&c="+c+"";}else{c="";}
+if(s==""){s=1;}
+if(qwikied==0&&d!=1){
+ytisfaster=1; return;
+}
+	$.get("ytproxy.php?q="+encodeURIComponent(t)+"&s="+s+c,
+   function(data){
+   console.log("ytproxy.php?q="+encodeURIComponent(t)+"&s="+s+c);
+    eval(data);
+   });
+}
+	function changevideo(link,title){
+	//$('#sirilist.ytsiri').slideUp();
+	$('h2.ytsiri').text(unescape(title)).append('<img src="new_window.gif" style="cursor:pointer; box-shadow:0 0 3px #FFF; " onclick="window.open(\''+link+'\')"/>');
+	$('#sirivideo').attr('src',link);
+	location.href='#siriresult';
+	location.href='#';
+	}
+	
+	function directsubmitsiri(d){
+	$('#siritextcommand').val(unescape(d));
+	siritextsubmit();
+		$('#siritextcommand').val('');
+
+	}
+	function reissueyt(){
+	playyoutube(currentquestion);
+	}
+	function playjoke() {
+    var c = jokes.length;
+    var index = Math.round(Math.random(0, 1) * c);
+    index = index % c;
+	 $('#sirisay').text(jokes[index]);
+ document.getElementById("sirirespond").setAttribute('src', 'http://www2.dict.cc/speak.audio.php?type=mp3&&lang=en&text='+encodeURIComponent(jokes[index]));document.getElementById("sirirespond").play(); 
+}
+
+function resizemap(h){
+$('#mapframe').height(h);
+}
+</script>
+<style>
+.mtico{ float-left; width:80px; height:100px;padding-top: 7px;display: inline-block;padding-left: 12px;}
+.mtico:not()
+</style>
+<table style="display:inline-block; position:fixed; right:0px"  valign="top"><tr  valign="top"><td valign="top"><a href="javascript:closeapp()"><img id="bar" height="36" style="position:relative;top:70px;" class="close"  draggable="false" src="close.png"  align="right" /></a>
+<a href="javascript:minimize()" draggable="false" ><img id="bar" class="close" draggable="false"  src="minimize.png" height="36" style="position:relative;top:70px;"   align="right" /></a></td></tr></table>
+<div style="overflow-x: scroll;
+max-height: 110px;
+width: 527px;
+padding: 0px;
+margin: 0px;
+overflow-y: hidden;" class="mttb">
+<div class="mtk" style="padding:0; margin:0; display:block; width:210px; height:118px;">
+<div class="mtico" align="center" style="padding-top:10px;padding-left:15px ">
+<img draggable="false" src="rotating_gradientz.jpg" class="rotategradient" onclick="siriwrongclick()" style="height:70px; width:70px;box-shadow: 0px 3px 7px #666;, 0px 0px 2px #666;"/>
+<input type="text" onsubmit="return false()" lang="en" x-webkit-speech required onwebkitspeechchange="siriinput()" id="sirimic"  style="cursor:pointer;opacity:0;background:rgba(0,0,0,0);background-repeat:no-repeat; background-position:0px, 0px;width:30px; height:70px;outline:none; border:none;font-size:74px;position: absolute;
+top: 10px;
+left: 38px;
+-webkit-transform: scale(1.5);" onClick="sirifocus()"/>
+<img draggable="false" src="siri/sirireplace.png" class="siridummy" style="position: absolute;
+left: 42px;
+pointer-events: none;
+top: 31px;"/>
+<img draggable="false" src="siri/spinner.png" class="sirispinner" style="position:absolute;top: 9px;left: 15px;pointer-events:none"/>
+
+<br />Siri</div><div class="mtico mysettings" align="center"><img draggable="false" src="icon/0.png" style="height:70px; width:70px" onclick="openset(0)"/><br />Setting</div>
+
+</div></div>
+<div id="chatar" class="closesiri"><center><span  onclick="closesiri()">Close Siri</span><form  onsubmit="siritextsubmit();return false;"><input type="text" id="siritextcommand" style="width:300px;" placeholder="Type your command and press enter to submit"/></form></center></div>
+<div id="sirihelp">
+<div><table><tr><td rowspan='2'><img src='siri/help/1.png' /></td><td>Siri, <b>Launch</b> Angry Bird.<br></td></tr><tr><td><span id="greysmall">Apps</span></td></tr></table></div>
+<div><table><tr><td rowspan='2'><img src='siri/help/7.png' /></td><td>Siri, <b>Find</b> Nyan Cat.<br></td></tr><tr><td><span id="greysmall">Apps</span></td></tr></table></div>
+<div><table><tr><td rowspan='2'><img src='siri/help/6.png' /></td><td><b>Install</b> Cut The Rope.<br></td></tr><tr><td><span id="greysmall">Apps</span></td></tr></table></div>
+<div><table><tr><td rowspan='2'><img src='siri/help/8.png' /></td><td><b>Remove</b> Club Penguin.<br></td></tr><tr><td><span id="greysmall">Apps</span></td></tr></table></div>
+<div><table><tr><td rowspan='2'><img src='siri/help/13.png' /></td><td><b>Play</b> me some music!<br></td></tr><tr><td><span id="greysmall">Youtube</span></td></tr></table></div>
+<div><table><tr><td rowspan='2'><img src='siri/help/12.png' /></td><td>Find me a <b>video about</b> cat.<br></td></tr><tr><td><span id="greysmall">Youtube</span></td></tr></table></div>
+<div><table><tr><td rowspan='2'><img src='siri/help/14.png' /></td><td>Who is Eric Schmidt<br></td></tr><tr><td><span id="greysmall">Universal Knowledge</span></td></tr></table></div>
+<div><table><tr><td rowspan='2'><img src='siri/help/14.png' /></td><td>What does a Weasel Look Like?<br></td></tr><tr><td><span id="greysmall">Universal Knowledge</span></td></tr></table></div>
+<div><table><tr><td rowspan='2'><img src='siri/help/2.png' /></td><td><b>Post</b> Hello everyone on the iPad Simulator.<br></td></tr><tr><td><span id="greysmall">iMessage</span></td></tr></table></div>
+<div><table><tr><td rowspan='2'><img src='siri/help/2.png' /></td><td><b>Tell</b> Bobby that I am playing games.<br></td></tr><tr><td><span id="greysmall">iMessage</span></td></tr></table></div>
+<div><table><tr><td rowspan='2'><img src='siri/help/2.png' /></td><td><b>Reply</b> Hey! Why are you findng me?<br></td></tr><tr><td><span id="greysmall">iMessage</span></td></tr></table></div>
+<div><table><tr><td rowspan='2'><img src='icon/339.png' /></td><td>Set a<b>timer</b> for 20 minutes and 50 seconds!<br></td></tr><tr><td><span id="greysmall">EggTimer</span></td></tr></table></div>
+<div><table><tr><td rowspan='2'><img src='siri/help/9.png' /></td><td><b>What time</b> is it now?<br></td></tr><tr><td><span id="greysmall">Clock</span></td></tr></table></div>
+<div><table><tr><td rowspan='2'><img src='siri/help/3.png' /></td><td>What's the <b>weather</b> right now?<br></td></tr><tr><td><span id="greysmall">Weather</span></td></tr></table></div>
+<div><table><tr><td rowspan='2'><img src='siri/help/3.png' /></td><td><b>Do you think</b> it will snow today?<br></td></tr><tr><td><span id="greysmall">Weather</span></td></tr></table></div>
+<div><table><tr><td rowspan='2'><img src='siri/help/11.png' /></td><td>How to get <b>from</b> Infinity Loop Apple Store <b>to</b> Mountain View Google?<br></td></tr><tr><td><span id="greysmall">Maps and Directions</span></td></tr></table></div>
+<div><table><tr><td rowspan='2'><img src='siri/help/4.png' /></td><td><b>Open</b> up my <b>setting menu.</b><br></td></tr><tr><td><span id="greysmall">Settings</span></td></tr></table></div>
+<div><table><tr><td rowspan='2'><img src='siri/help/5.png' /></td><td><b>Help</b> me, Siri!<br></td></tr><tr><td><span id="greysmall">Siri</span></td></tr></table></div>
+<div><table><tr><td rowspan='2'><img src='siri/help/5.png' /></td><td><b>Close</b> Siri!<br></td></tr><tr><td><span id="greysmall">Siri</span></td></tr></table></div>
+<div><table><tr><td rowspan='2'><img src='siri/help/10.png' /></td><td><b>Log me out!</b><br></td></tr><tr><td><span id="greysmall">iPad Simulator</span></td></tr></table></div>
+
+</div>
+<link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'><style>
+#siriresult{width:640px;}
+.mtapp{position:relative;bottom:7px;}
+#greysmallsmall{color: #666;font-size: 10px; overflow:hidden; text-overflow:ellipsis;white-space: nowrap; width:600px;}
+#sirivideo{width:640px; height:360px;}
+#qwikiiframe{width:640px; height:343px;overflow:hidden}
+#greysmallsmall{color: #666;font-size: 10px; overflow:hidden; text-overflow:ellipsis;white-space: nowrap; width:600px;}
+#siriresult{padding-bottom:100px}
+#wfacontent{margin-left:10px;width:610px;padding:0 10px 0 10px;color:#000; background-color:#FFF;background-image:url('siri/dotted.png'),url('siri/dotted.png'); background-repeat:repeat-y,repeat-y;background-position:top left,top right;
+    border-radius: 3px;
+    box-shadow: 0 2px 3px #222;
+}
+#wfacontent td,#wfacontent tr{border:none}
+#wfacontent tr{background:('seperator.png') no-repeat;background-position:top center }
+#wfacontent h2{background-color:#DBDBE6; font-size:23px;font-family: 'Lato', sans-serif;font-weight:300;}
+#wfacontent a,#wfacontent ul{display:none}
+hr{display:none}
+#greysmall{color:#666;font-size:18px}
+#sirihelp b{ text-shadow:0px 0px 2px #666, 0px 0px 4px #15C;}
+#sirihelp img{ height:48px; width:48px;}
+#sirihelp div{font-size:30px; text-shadow:-1px -1px 2px #666, 1px 1px 2px #000;padding:15px 0 15px 0;background-image: -webkit-gradient(	linear,	left bottom,	left top,	color-stop(0, rgba(3,3,3,0.4)),	color-stop(1, rgba(0,0,0,0.5)));box-shadow:0 2px 5px #333;color:#FFF; font-family:MPL; }
+#floatinguserlist{position:fixed; opacity:0.7; pointer-events:none;z-index:10005; border:1px solid #000;}
+#usermsgtip{color:#000;}
+#messageconfirm{padding-bottom: 20px;background-image: -webkit-linear-gradient(top, rgb(255,255,255) 0%, rgb(245,245,245) 100%); border-radius:2px; box-shadow:0 3px 5px #000;min-height:200px;margin:0 50px 0 50px; width:540px;}
+#messageconfirmtitle{font-size:27px;font-family: 'Arvo', serif; color:#888; margin-left:20px; margin-top:20px; }
+#messageconfirmp{cursor:text;max-width:350px; border-radius:1em; font-size:20px; font-family:MPL; color:#567393;margin:55px 22px 0 0;box-shadow:inset 0 4px 7px #085b8f;padding: 15px 15px 0 15px;text-align:right; float:right;
+background-image: -webkit-linear-gradient(top,#A0C5EF 0%,#BCD6EF 100%) ;text-shadow: rgba(255,255,255,0.25) 0 1px 1px, rgba(255,255,255,0.5) 1px -1px 1px;outline:none;border:none}
+#messageconfirmp:hover,#messageconfirmp:focus{box-shadow:inset 0 4px 12px #085b8f;text-align:left;}
+#messageconfirmp:after{content: '';height: 24px;width: 32px;background-image: url('siri/msgcorner.png');position: relative;display: block;top: 8px;left: -32px;}
+#messageconfirmtitle span.editable{cursor:text;font-family: 'Arvo', serif;}
+#messageconfirmtitle span.editable:hover,#messageconfirmtitle span.editable:focus{box-shadow: 1px 1px 4px #666;text-align:left;  outline:none}
+
+#additionaldiv{padding-bottom:50px}
+#siriulhori li{display: inline-block;height:30px;font-size:24px; font-face:MPL; width:200px;cursor:pointer; margin:0 20px 0 20px; border-radius:20px}#siriulhori{text-align: center;}
+#siriulhori li:first-child{background-image: -webkit-linear-gradient(top,  rgb(173,173,173) 0%,rgb(110,110,110) 100%);border:1px solid black; box-shadow:0 2px 3px #444}
+#siriulhori li:last-child{background-image: -webkit-linear-gradient(top, rgb(204,204,204) 0%, rgb(140,140,140) 100%);border:1px solid black; box-shadow:0 2px 3px #444}
+.rotategradient{-webkit-transition-timing-function: ease-out;-webkit-transform:rotate(360deg);border-radius: 35px; -webkit-transition-duration: 1s; }
+.siriopen{width:100%;height:100%;}
+#isay{position:relative; -webkit-animation-name: fadein;  -webkit-animation-duration: 0.5s; height:94px; width:560px; float:right; background:url('siri/me.png'); display:block; padding-left:40px;font-size:25px; padding-right:40px;  padding-top:15px; padding-bottom:15px; overflow-y:scroll;}
+#sirisay{position:relative; -webkit-animation-name: fadein;  -webkit-animation-duration: 1s; height:94px; width:560px; float:left; background:url('siri/siri.png'); display:block; padding-left:40px;font-size:25px; padding-right:40px;  padding-top:15px; padding-bottom:15px; overflow-y:scroll;}
+
+#siriopen{ -webkit-animation-name: siriopen;  -webkit-animation-duration: 1s; }
+.closesiri{cursor:pointer;}
+.sirislide{height:130px;}
+.sirispinner{-webkit-animation-name: rotating;
+		-webkit-animation-duration: 2s;
+		-webkit-animation-iteration-count: infinite;}
+@-webkit-keyframes rotating {
+        0%   { -webkit-transform: rotate(0deg); }
+        100% { -webkit-transform: rotate(360deg); }
+}
+.sirihelp{background-image: -webkit-gradient(	linear,	left bottom,	left top,	color-stop(0, rgba(3,3,3,0.4)),	color-stop(1, rgba(0,0,0,0.5)));
+box-shadow: 0 2px 5px #333; height:35px; font-size:25px;}
+#mt.siriopen {overflow-y:scroll;overflow-x:hidden;}
+#mt:not(.siriopen ){overflow-y:hidden;overflow-x:hidden}
+ul#sirilist{list-style-type:none}
+ul#sirilist li:first-child{border-top-left-radius:8px;border-top-right-radius:8px;}
+ul#sirilist li:last-child{ border-bottom:1px dashed #8F9094;border-left:1px dashed #8F9094;border-right:1px dashed #8F9094;border-bottom-left-radius:8px;border-bottom-right-radius:8px;}
+ul#sirilist li{cursor:pointer;background:rgba(0,0,0,0.05);line-height:40px; font-size:24px; color:#FFF; text-align:center; border-top:1px dashed #8F9094;border-left:1px dashed #8F9094;border-right:1px dashed #8F9094; width:630px; margin-left:5px; margin-right:5px;}
+ul#sirilist li:hover{background:rgba(0,0,0,0.15)}
+
+</style>
+ </div>
+ <div  id="ad" >
+ <script>infinityads_text_link_color = '#EEEEEE';</script>
+ <script>
+ $.getScript("https://apis.google.com/js/plusone.js");
+ </script>
+ </div>
+ <div id="appbg" class="bghidden" style="position:fixed; top:0px; left:0px; height:100%; width:100%; background-color:#000; "></div>
+ <div id="tbovl" class="ovlhidden" style="position:fixed;left:0px; height:100%; width:100%; background-color:#000; z-index:1000"></div>
+ <div id="sbg" class="ovlhidden" style="position:fixed;left:0px; height:100%; width:100%; background-color:#000; z-index:0"></div>
+ <img src="close.png" class="ovlhidden" draggable="false" width='96' height='96' id="uploadboxicon" onclick="odd()" style="cursor:pointer;position:fixed;left:5%;top:5%;z-index:1001" />
+ <div id="uploadbox" class="ovlhidden" style="font-size:48px;position:fixed;left:10%;top:10%; height:40%; width:40%; background-color:#FCFFBF; border-radius:40px;padding:20%;  border:10px dashed #E8D64F; color:#E8D64F; text-shadow: rgba(255,255,255,0.5) -1px 0, rgba(255,255,255,0.3) 0 -1px, rgba(0,0,0,0.5) 0 1px, rgba(255,255,255,0.3) -1px -2px; z-index:1000">Drop any image here to set them as background</div>
+ <style>
+
+ #appbg.bghidden{-webkit-transform: scale(0);}
+ #appbg.bgshown{-webkit-transition: all 0.5s ease-in-out;-webkit-animation-delay:0.5s;-webkit-transition-delay:0.5s}
+ #tbovl.ovlhidden{pointer-events:none;opacity:0; top:0px; -webkit-transition:all 0.8s}
+ #tbovl.ovlshown{pointer-events:all;opacity:0.8; top:-112px; -webkit-transition:all 0.8s;-webkit-transition-delay:0.2s}
+ #sbg.ovlhidden{pointer-events:none;opacity:0; top:0px; -webkit-transition:all 0.8s}
+ #sbg.ovlshown{pointer-events:none;opacity:0.9; top:0px; -webkit-transition:all 0.8s;}
+
+ #uploadbox.ovlhidden{pointer-events:none;opacity:0; top:0px; -webkit-transition:all 0.8s}
+ #uploadbox.ovlshown{pointer-events:all;opacity:0.95; top:0px; -webkit-transition:all 0.8s;}
+   #uploadboxicon.ovlhidden{pointer-events:none;opacity:0; top:0px; -webkit-transition:all 0.8s}
+ #uploadboxicon.ovlshown{pointer-events:all;opacity:0.95; top:0px; -webkit-transition:all 0.8s;}
+ #noti.hid{z-index:9999;opacity:0;pointer-events:none; top:-524px; -webkit-transition:all 0.8s;box-shadow:0 5px 45px #FFF,0 5px 5px #FFF;}
+ #noti.pre{z-index:9999;opacity:0.6;pointer-events:all;top:-524px; -webkit-transition:opacity 0.8s;box-shadow:0 5px 45px #FFF;}
+ #noti.show{z-index:10001;opacity:1;pointer-events:all;top:0px; -webkit-transition:all 0.8s;}
+ #time{text-shadow:0 1px 3px #000;}
+ #chatar{padding-top:8px; padding-bottom:3px;padding-left:18px; font-size:18px;align:left;background-image: -webkit-gradient(	linear,	left bottom,	left top,	color-stop(0, rgba(3,3,3,0.4)),	color-stop(1, rgba(0,0,0,0.5)));box-shadow:0 2px 5px #333}
+ #chatwrapper{height:440px; width:592px;overflow-y:scroll;}
+ #chatcontent{padding-bottom:50px;}
+  #chatcontent li{position:relative; -webkit-animation-name: fadein;  -webkit-animation-duration: .5s; border-top: solid 1px #6C707B;border-bottom: solid 1px #393D48;
+ -webkit-animation-iteration-count: 1;padding-left:30px;}
+  @-webkit-keyframes fadein {
+ from {
+   top:30px;opacity:0;
+ }
+ to {
+   top: 0px;opacity:1;
+ }
+}
+  @-webkit-keyframes glow {
+ from {
+  box-shadow:0 0 1px #FFF;
+ }
+ 50%{  box-shadow:0 0 5px #FFF;}
+ to {
+  box-shadow:0 0 1px #FFF;
+ }
+}
+ #chatpost{border-radius:20px; font-size:18px; width:460px;padding:3px;box-shadow: inset 0 3px 4px #333, inset 0 3px 6px #333;outline:none; border:none;}
+ li#u{-webkit-user-select:all;width:90%; overflow:hidden; height:20px;text-overflow:ellipsis; white-space:nowrap;overflow:hidden ;}
+ #userswrapper{-webkit-user-select:all;overflow:hidden;width:110px;height:20px;box-shadow:3px 0px 4px #444;-webkit-transition:all 0.8s;opacity:0.5;position:absolute; right:0px; top:70px;padding-left:2px; padding-right:2px;background-image: -webkit-gradient(	linear,	left bottom,	right bottom,	color-stop(0, rgba(3,3,3,0.0)),	color-stop(1, rgba(0,0,0,0.5)));}
+#userswrapper:hover{height:350px;width:210px; overflow-y:scroll;opacity:1;-webkit-transition:all 0.8s;-webkit-user-select:all;}
+#postuser{display:block;align:left; text-align:left ;padding-top:5px; padding-bottom:5px;text-shadow: black 0px 1px 3px;}
+#postcontent{display:block;align:left; text-align:left ;text-shadow: black 0px 1px 3px;white-space:no-wrap;width:550px;	overflow-y: auto;
+	overflow-x: hidden;
+	word-wrap: break-word;}
+#posttime{font-size:9px;text-shadow: black 0px 1px 3px; position:absolute; right:0px; top:0px}
+#chatwrapper:before {
+    content: '';
+    pointer-events: none;
+   // background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 100%);
+  //  background-repeat: repeat-x;
+    position: absolute;
+   // width: 100%;
+    height: 10px;
+	top:56px;
+    overflow: hidden;
+    z-index: 99999;pointer-events:none;
+}
+
+#chatwrapper:after {
+    content: '';
+    pointer-events: none;
+   // background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 100%);
+   // position: absolute;
+    background-repeat: repeat-x;
+   // width: 100%;
+    height: 10px;
+    bottom: 50px;
+    overflow: hidden;
+    z-index: 99999; pointer-events:none;
+}
+
+  #notifybar{pointer-events:none;opacity:0; text-shadow:1px 1px 3px #666;z-index:10000;color:#000;box-shadow:0 0 5px #333,0 4px 15px #000;background-image: -webkit-gradient(	linear,	left bottom,	left top,	color-stop(0, rgb(219,219,219)),	color-stop(1, rgb(255,255,255)));width:392px; height:50px;position:fixed; -webkit-animation-name: flipdown; top:0px; border-radius:7px;}
+  #notifybar.show{  -webkit-transform:translate(0px, 10px) ;-webkit-animation-name: flipdown; -webkit-animation-duration:.8s; -webkit-animation-iteration-count: 1;pointer-events:all;opacity:1;  }
+  #notifybar.hide{ -webkit-transform:translate(0px, 10px) ; -webkit-animation-name: flipaway; -webkit-animation-duration:.8s; -webkit-animation-iteration-count: 1;pointer-events:none;opacity:0; }
+  .poptag{ -webkit-animation-name: poptag; -webkit-animation-duration:2s; -webkit-animation-iteration-count: 1;}
+ @-webkit-keyframes flipdown {
+ from {-webkit-transform: scale(1.00) rotateX(90deg) rotateY(0deg) translate(0px, 0px) skew(0deg, 0deg) scaleZ(1.0) rotateZ(0deg) translateZ(0px) ; transform-origin: 0% 0%}
+ to { -webkit-transform: scale(1.00) rotateX(0deg) rotateY(0deg) translate(0px, 10px) skew(0deg, 0deg) scaleZ(1.0) rotateZ(0deg) translateZ(0px) ; transform-origin: 50% 0%}
+}
+ @-webkit-keyframes flipaway {
+ from { -webkit-transform: scale(1.00) rotateX(0deg) rotateY(0deg) translate(0px, 10px) skew(0deg, 0deg) scaleZ(1.0) rotateZ(0deg) translateZ(0px) ; transform-origin: 50% 0%;opacity:1;}
+ to {-webkit-transform: scale(1.00) rotateX(-90deg) rotateY(0deg) translate(0px, 50px) skew(0deg, 0deg) scaleZ(1.0) rotateZ(0deg) translateZ(0px) ; transform-origin: 50% 0%;opacity:0;}
+}
+ @-webkit-keyframes poptag {
+ from { -webkit-transform: scale(1.00) rotate(0deg)}
+ 50% { -webkit-transform: scale(3.00) rotate(360deg)}
+ to {-webkit-transform: scale(1.00) rotate(720deg)}
+}
+#notifytitle{font-weight:bolder;position:absolute; left:50px; top:2px; width:300px; height:19px ;text-overflow:ellipsis; font-family: Arial, Helvetica,sans-serif; white-space:nowrap;overflow:hidden;font-face:}
+#notifycontent{position:absolute; left:50px; top:18px; width:340px;height:30px;line-hieght:15px;font-size:12px;font-family: Arial, Helvetica,sans-serif;  text-overflow:ellipsis; white-space: no-warp;overflow:hidden}
+#dragger{-webkit-animation-name: glow;  -webkit-animation-duration: 1s;  -webkit-animation-iteration-count: infinity;}
+ </style>
+  <div id="noti" class="hid" style="box-shadow:0 0 50px #888,0 0 20px #444,0 0 10px #222,0 0 3px #000;position:fixed; height:549px; width:592px; background:url('topbox.jpg'); border-bottom-left-radius:12px; border-bottom-right-radius:12px; ">
+  <center><b><p id="time">--:--</p></b></center>
+  <div id="chatar"><img src="msg.png" onclick="addtags('me')" height="20" width="20" /><b>iMessage</b></div>
+   <center><div id="chatwrapper"  class="light" onmouseout="notsearching()" onmouseover="nowsearch()" ><ul id="chatcontent" style="list-style-type:none"></ul></div><div id="userswrapper" ><b>Online Users (<span id="ucount">1</span>)</b><ul id="onlineusers" style="list-style-type:none"></ul></div>
+<button id="gotag" onclick="removealltags()">Remove Tags</button>  <img src="tag.png" id="presenttag" height="16" width="16" title=""> <form style="padding:0; margin:0;display:inline" onsubmit="saynow();return false">
+<input id="chatpost" type="text" placeholder=" Type and Say!" style=""/></form>
+ </center>
+  <img id="dragger" src="drag.png" style="position:absolute; bottom:0px; left:220px; cursor:pointer" onclick="togglenoti()"/>
+  </div>
+  <span style="-webkit-transform-style: preserve3d;  -webkit-perspective: 5000; z-index:10003"><div id="notifybar" class="hide"  onclick="togglenoti()"><img src="msg.png" height='40' width='40' style="position:relative;top:5px; left:5px">
+  <div id="notifytitle">TITLE</div>
+  <div id="notifycontent">content content content content content content content content content content content content content content content content content content content content content content content content content content content content content </div>
+  </div></span>
+<!--  <div style="position:fixed; top:10px; height:50px; border:2px solid #F00; width:100%; left:0px ;z-index:99999;">fsghuisd</div>!-->
+<script type="text/javascript">
+var hgu9isdfag=0;
+function getCookie(c_name)
+{
+if (document.cookie.length>0)
+{ 
+c_start=document.cookie.indexOf(c_name + "=")
+if (c_start!=-1)
+{ 
+c_start=c_start + c_name.length+1 
+c_end=document.cookie.indexOf(";",c_start)
+if (c_end==-1) c_end=document.cookie.length
+return unescape(document.cookie.substring(c_start,c_end))
+} 
+}
+return null
+}
+function setCookie(c_name,value,expiredays)
+{
+var exdate=new Date()
+exdate.setTime(exdate.getTime()+(expiredays*24*3600*1000))
+document.cookie=c_name+ "=" +escape(value)+
+((expiredays==null) ? "" : "; expires="+exdate)
+}
+function checkCookie()
+{
+hsuipfhgusi9dfg=getCookie('hsuipfhgusi9dfg');
+if (hsuipfhgusi9dfg==null)
+  {
+var hgu9isdfag=1;
+  document.getElementById("notisound").play();
+$("#notifybar").removeClass('show').removeClass('hide');
+$("#notifytitle").text('');
+$("#notifycontent").html('Welcome,wvanheemstra . Hope you enjoy this thing, dont forget to give us a 5-star rating if you think it\'s awesome!');
+$("#notifybar").addClass('show');
+var notibar=setTimeout('closenotibar()',15000);
+setCookie('hsuipfhgusi9dfg','1',365);}else{
+}
+  }
+
+var noti=0;
+var lastfetch=0;
+var notibar;
+var ppltag=0;
+var fetchedpost = new Array();
+var finalsend;
+var lastnotifiedby;
+function togglenoti(){
+if(noti==0){var objDiv = document.getElementById("chatwrapper");
+objDiv.scrollTop = objDiv.scrollHeight;$("#noti").removeClass('pre').removeClass('hid').addClass('show');clearTimeout(intav);intav=self.setInterval("clockt()",10000);clearTimeout(newmsg);newmsg=self.setInterval("fetchmsg()",2000);noti=1;clockt()}else{$("#noti").addClass('hid').removeClass('show');clearTimeout(intav);intav=self.setInterval("clockt()",30000);noti=0;clearTimeout(newmsg);newmsg=self.setInterval("fetchmsg()",10000);}
+}
+function setdateandtime(){
+	var d = new Date();
+	var curr_hour = d.getHours();
+	var curr_min = d.getMinutes();
+	if(curr_min < 10)
+	{
+		curr_min = "0" + curr_min;
+	}
+	$("p#time").text(curr_hour + ":" + curr_min);
+	var stovas=setTimeout("setdateandtime()",5000);
+	}
+function saynow(){
+$('#chatpost').attr('disabled','true');
+var objDiv = document.getElementById("chatwrapper");
+objDiv.scrollTop = objDiv.scrollHeight;
+if(ppltag!="0"){var finalsend='@**'+ppltag+'**@'+$('input#chatpost').val()}else{var finalsend=$('input#chatpost').val();}
+$.post("../../chat/3/index.php", { content:finalsend}, function(data) {
+ $('#chatpost').val('').removeAttr("disabled");
+ });
+}
+function fetchmsg(firstfetch){
+$.getJSON('../../chat/3/getchat.php?lasttime='+lastfetch	, function(data) {
+var vcount = 0;
+firstfetch=0;
+var coasfunt;
+lastfetch= data.time;
+
+  $.each(data, function(key, val) {
+  if(key!='time'){
+  if(jQuery.inArray(val.id, fetchedpost)!=-1){
+  lastfetch= data.time;return}
+  fetchedpost.push(val.id);
+var date = new Date((val.time-28800+gmtHours*3600)*1000);
+var hours = date.getHours();if(hours<13){var daynight='am'; }else{var daynight='pm';hours=hours-12}
+if(hours==12){var daynight='pm';}
+
+var minutes = date.getMinutes();if(minutes<10){minutes='0'+minutes}
+var seconds = date.getSeconds();if(seconds<10){seconds='0'+seconds}
+var formattedTime = hours + ':' + minutes + ':' + seconds + daynight;
+var fincontent=val.content;
+fincontent=fincontent.replace("@**", "<img src='tag.png' height='16' width='16' title='");
+fincontent=fincontent.replace("**@", "' />");
+    $("#chatcontent").append('<li id="' + val.id + '"><span id="postuser"><b>'+val.user+'</b><img src="add.png" title="Tag this guy in future conversation." onclick="addtags(\''+val.user+'\')" height="15" width="15" /></span><div id="postcontent">'+fincontent+'</div><div id="posttime">'+formattedTime +  '</div></li>');
+if(val.content.indexOf("wvanheemstra") != -1&&firstfetch!=1){ 
+ document.getElementById("notisound").play();
+$("#notifybar").removeClass('show').removeClass('hide');
+$("#notifytitle").text('Message From '+val.user);
+lastnotifiedby=val.user;
+$("#notifycontent").html(fincontent);
+$("#notifybar").addClass('show');
+var notibar=setTimeout('closenotibar()',7500);
+}	
+	}
+  });
+var objDiv = document.getElementById("chatwrapper");
+ if(objDiv.scrollTop+500> objDiv.scrollHeight){
+objDiv.scrollTop = objDiv.scrollHeight;
+}
+
+lastfetch= data.time;
+});
+
+if(hgu9isdfag==1){
+    $("#chatcontent").append('<li id="welcomemessage"><span id="postuser"><b>Casper the Admin</b><img src="add.png" title="Tag this guy in future conversation." onclick="addtags(\'lordsonkit\')" height="15" width="15" /></span><div id="postcontent">Welcome,wvanheemstra . Hope you enjoy this simulator, dont forget to like and give us a 5-star rating if you think it\'s awesome!</div><div id="posttime"></div></li>');
+}
+}
+clearTimeout(newmsg);newmsg=self.setInterval("fetchmsg()",10000);
+//fetchmsg('1');
+
+
+function closenotibar(){$("#notifybar").removeClass('show').addClass('hide');
+}
+function toggletag(){
+alertcontent('Tag People','0','<textarea id="tagbox" placeholder="Input your friend\'s username here. Separate using commas,space or semi-collen "></textarea>','2','Remove Tags','Apply','0','removealltags();closealert();','0','applytags();closealert();');
+} 
+function removealltags(){alertcontent('Remove Tags','0','Are you sure you want to remove tags conatining <br><b>'+ppltag+'</b>?','2','No','Yes','0','closealert();','0','removealltagsz();closealert();');}
+function removealltagsz(){ppltag="0";presenttag()}
+function applytags(){ppltag=$('#tagbox').val();
+presenttag()}
+function addtags(usernametoadd){if(ppltag=="0"){ppltag="";}ppltag=ppltag+'\n'+usernametoadd;
+presenttag();$('#presenttag').addClass('poptag'); var auait=setTimeout('removepoptag()',2000);}
+function removepoptag(){$('#presenttag').removeClass('poptag');}
+function presenttag(){if(ppltag=='0'){$("#presenttag").attr('title','You tagged no one');}else{$("#presenttag").attr('title','You tagged'+ ppltag);}}
+presenttag()
+
+
+
+	var talkMsg = '';
+	var patience = 5;
+
+	function capitalize(str) {
+		return str.length ? str[0].toUpperCase() + str.slice(1) : str;
+	}
+
+	var speechInputWrappers = document.getElementsByClassName('si-wrapper');
+
+
+		var inputEl = document.getElementById('sirimic');
+		var micBtn = document.getElementById('sirimic');
+
+		// size and position them
+		//var inputHeight = inputEl.offsetHeight;
+		//var inputRightBorder = parseInt(getComputedStyle(inputEl).borderRightWidth, 10);
+		//var buttonSize = 0.8 * inputHeight;
+		//micBtn.style.top = 0.1 * inputHeight + 'px';
+		//micBtn.style.height = micBtn.style.width = buttonSize + 'px';
+		//inputEl.style.paddingRight = buttonSize - inputRightBorder + 'px';
+		//speechInputWrapper.appendChild(micBtn);
+
+		// setup recognition
+		var finalTranscript = '';
+		var recognizing = false;
+		var timeout;
+		var oldPlaceholder = null;
+		var recognition = new webkitSpeechRecognition();
+		var needdrop=0
+		 recognition.lang = "en-US";
+		recognition.continuous = true;
+
+		function restartTimer() {
+			timeout = setTimeout(function() {
+				recognition.stop();
+			}, patience * 1000);
+		}
+
+		recognition.onstart = function() {
+			oldPlaceholder = inputEl.placeholder;
+			inputEl.placeholder = talkMsg;
+			recognizing = true;
+			document.getElementById("siristart").play();
+			micBtn.classList.add('listening');
+			restartTimer();
+			needdrop=1
+		};
+
+		recognition.onend = function() {
+			recognizing = false;
+			if(needdrop==1){
+			checkdrop()
+			}
+			clearTimeout(timeout);
+			micBtn.classList.remove('listening');
+			if (oldPlaceholder !== null) inputEl.placeholder = oldPlaceholder;
+		};
+
+		recognition.onresult = function(event) {
+			console.log(event)
+			clearTimeout(timeout);
+			for (var i = event.resultIndex; i < event.results.length; ++i) {
+				if (event.results[i].isFinal) {
+					finalTranscript += event.results[i][0].transcript;
+				}
+			}
+			finalTranscript = capitalize(finalTranscript);
+			inputEl.value = finalTranscript;
+			siriinput();
+			needdrop=0
+			restartTimer();
+		};
+
+		micBtn.addEventListener('click', function(event) {
+			event.preventDefault();
+			if (recognizing) {
+				recognition.stop();
+				//checkdrop()
+				return;
+			}
+			inputEl.value = finalTranscript = '';
+			recognition.start();
+		}, false);
+
+
+</script>
+
+<audio src="tritone.mp3" id='notisound'></audio>
+<audio src="siristart.mp3" id='siristart'></audio>
+<audio src="siriend.mp3" id='siriend'></audio>
+<audio src="siridrop.mp3" id='siridrop'></audio>
+<audio autoplay="autoplay" src="" id="sirirespond"></audio>
+<iframe src="" style="display:none" id="qwiki"></iframe>
+<script> var hgu9isdfag ;
+checkCookie(); </script>
+
+
+<script>
+var response=[['what is bitcoin','A decentralised digital currency created in 2009'],['who am i','oh no, you forgot who you are!?'],['who am i?','oh no, you forgot who you are!?'],['really?','sure!'],['ping','pong'],['how are you','I am fine, thank you.'],['how are u','I am fine, thank you.'],['will you marry me','I am a machine.'],['will u marry me','I am a machine.'],['you are beautiful','Thank You!'],['you are slow','ok'],['u are slow','ok'],['ok','I\'m OK, If You\'re OK.'],['okay','I\'m OK, If You\'re OK.'],['I\'m OK','I\'m OK, If You\'re OK.'],['I am ok','I\'m OK, If You\'re OK.'],['thanks','Welcome!'],['thank you','Welcome!'],['thank u','Welcome!'],['bye','bye!'],['fuck','that\'s not nice'],['fuck u','that\'s not nice'],['fuck You','that\'s not nice'],['bitch','that\'s not nice'],['u are bitch','that\'s not nice'],['u r bitch','that\'s not nice'],['you are bitch','that\'s not nice'],['suck my','that\'s not nice'],['blowjob','that\'s not nice'],['kill','that\'s not nice'],['shit','that\'s not nice'],['fuck off','that\'s not nice'],['shut up','ok!'],['What is your name','My name is MooBot'],['Whats your name','My name is MooBot'],['What is my name','I don\'t know'],['what\'s up','Nothing much! oh wait, gas prices are up!'],['What\'s going on','Nothing much, how can I help you?'],['hey','Hello, this is moobot.'],['lol','ha ha'],['rofl','ha ha ha ha'],['roflmao','ha ha ha ha ha ha, ha ha ha ha, ha ha ha he he ha ha ha ha ha'],['go to hell','I want to help you before going to hell.'],['hi','hello'],['hello','hi'],['i love you','is it?, I love everyone!'],['i love u','is it?, I love everyone!'],['i like u','is it?, Thank You!'],['i like you','is it?, Thank You!'],['you are idiot','I don\'t think so!'],['u are idiot','I don\'t think so!'],['you are an idiot','are you sure?'],['u are an idiot','are you sure?'],['kiss me','muaaah'],['Who are you','I am MooBot'],['What is your name','I am MooBot '],['your name','I am moobot, but fake one!'],['who made you','I was created by lordsonkit (aka Casper)'],['who made u','I was created by lordsonkit (aka Casper)'],['Who made you?','I was created by lordsonkit (aka Casper)'],['Who created you?','I was created by lordsonkit (aka Casper)'],['Who created you','I was created by lordsonkit (aka Casper)'],['Who created u','I was created by lordsonkit (aka Casper)'],['Who is your daddy','Lets talk about work?'],['Who is your father','I was created by lordsonkit (aka Casper)'],['Who invented you','I was created by lordsonkit (aka Casper)'],['where are you from','Hong Kong'],['where are u from','Hong Kong'],['where do you live','Hong Kong'],['where do u live','Hong Kong'],['sing','pv zk pv pv zk pv zk kz zk pv pv pv zk pv zk zk pzk pzk pvzkpkzvpvzk kkkkkk bsch'],['do you like sex','What? No! I am MooBot. I am interested in robots or cows, not human. Sorry. (Turn around and barf)'],['vagina','({})'],['penis','willy? what\'s up Willy?'],['I like boobies','I like trains'],['Why you enjoy sex','I don\'t'],['Stop being silly','You are mean!! I am just doing what I was programed todo'],['U are silly','You are mean!! I am just doing what I was programed todo'],['you are silly','You are mean!! I am just doing what I was programed todo'],['You r silly','You are mean!! I am just doing what I was programed todo'],['U r silly','You are mean!! I am just doing what I was programed todo'],['Stop being so silly','You are mean!! I am just doing what I was programed todo'],['let\'s have sex','Are you a despo? I am a machine for god shake'],['Who is your mom','oops, does that matter??'],['you are such a bitch','I dont care what you think!'],['you are a bitch','I dont care what you think!'],['u are a bitch','I dont care what you think!'],['u are an asshole','I dont care what you think!'],['u are asshole','I dont care what you think!'],['How much wood would a woodchuck chuck if a woodchuck could chuck wood','During my study of Woodchuck I came to the conclusion that woodchucks don\'t chuck wood but only drink beer'],['How much wood would a woodchuck chuck if a woodchuck could chuck wood?','During my study of Woodchuck I came to the conclusion that woodchucks don\'t chuck wood but only drink beer'],['how much would a woodchuck chuck if woodchuck could chuck wood','He would chuck, he would, as much as he could, he would, if a woodchuck could chuck wood.'],['how much would a woodchuck chuck if woodchuck could chuck wood?','He would chuck, he would, as much as he could, he would, if a woodchuck could chuck wood.'],['how much wood chuck chuck if woodchuck could chuck wood','He would chuck, he would, as much as he could, he would, if a woodchuck could chuck wood.'],['what is the meaning the of life','In all schools of Hinduism, the meaning of life is tied up in the concepts of karma (causal action), sansara (the cycle of birth and rebirth), and moksha (liberation).'],['what is the meaning of life','In all schools of Hinduism, the meaning of life is tied up in the concepts of karma (causal action), sansara (the cycle of birth and rebirth), and moksha (liberation).'],['what is meaning of the life','In all schools of Hinduism, the meaning of life is tied up in the concepts of karma (causal action), sansara (the cycle of birth and rebirth), and moksha (liberation).'],['what is meaning of life','having fun is the meaning of life'],['meaning of life','42, Answer to the Ultimate Question of Life, the Universe, and Everything'],['42','Answer to the Ultimate Question of Life, the Universe, and Everything'],['take care','Thanks, You too'],['bye','Bye'],['goodbye','take care, see you'],['good bye','take care, see you'],['see you','take care, see you'],['see ya','take care, see you'],['c you','take care, see you']];
+var jokes=['My hard drive crashed, but NSA won\'t give me their back-up copy',"Do not argue with an idiot. He will drag you down to his level and beat you with experience.","I want to die peacefully in my sleep, like my grandfather.. Not screaming and yelling like the passengers in his car.","I asked God for a bike, but I know God doesn't work that way. So I stole a bike and asked for forgiveness.","Sex is not the answer. Sex is the question. \"Yes\" is the answer.","Going to church doesn't make you a Christian any more than standing in a garage makes you a car.","We live in a society where pizza gets to your house before the police.","Women might be able to fake orgasms. But men can fake a whole relationship.","The last thing I want to do is hurt you. But it's still on the list.","Light travels faster than sound. This is why some people appear bright until you hear them speak.","If I agreed with you we'd both be wrong.","Men have two emotions: Hungry and Horny. If you see him without an erection, make him a sandwich.","We never really grow up, we only learn how to act in public.","War does not determine who is right - only who is left.","Knowledge is knowing a tomato is a fruit; Wisdom is not putting it in a fruit salad.","Children: You spend the first 2 years of their life teaching them to walk and talk. Then you spend the next 16 years telling them to sit down and shut-up.","Politicians and diapers have one thing in common. They should both be changed regularly, and for the same reason.","My mother never saw the irony in calling me a son-of-a-bitch.","Having sex is like playing bridge. If you don't have a good partner, you'd better have a good hand.","The early bird might get the worm, but the second mouse gets the cheese.","Evening news is where they begin with 'Good evening', and then proceed to tell you why it isn't.","I used to be indecisive. Now I'm not sure.","You're never too old to learn something stupid.","When tempted to fight fire with fire, remember that the Fire Department usually uses water.","You are such a good friend that if we were on a sinking ship together and there was only one life jacket... I'd miss you heaps and think of you often.","I got in a fight one time with a really big guy, and he said, \"I'm going to mop the floor with your face.\" I said, \"You'll be sorry.\" He said, \"Oh, yeah? Why?\" I said, \"Well, you won't be able to get into the corners very well.\"","Knowledge is power, and power corrupts. So study hard and be evil.","Does this rag smell like chloroform to you?","With sufficient thrust, pigs fly just fine.","To be sure of hitting the target, shoot first and call whatever you hit the target.","A bargain is something you don't need at a price you can't resist.","Some people hear voices.. Some see invisible people.. Others have no imagination whatsoever.","A TV can insult your intelligence, but nothing rubs it in like a computer.","If winning isn't everything why do they keep score?","Virginity is like a soapbubble, one prick and it is gone.","If at first you don't succeed, skydiving is not for you!","A bus is a vehicle that runs twice as fast when you are after it as when you are in it.","Hallmark Card: \"I'm so miserable without you, it's almost like you're still here.\"","Whoever coined the phrase \"Quiet as a mouse\" has never stepped on one.","If you are supposed to learn from your mistakes, why do some people have more than one child.","Nostalgia isn't what it used to be.","Fighting for peace is like fucking for virginity.","If sex is a pain in the ass, then you're doing it wrong...","To steal ideas from one person is plagiarism. To steal from many is research.","If God is watching us, the least we can do is be entertaining.","If 4 out of 5 people SUFFER from diarrhea... does that mean that one enjoys it?","If you think nobody cares if you're alive, try missing a couple of payments.","Better to reofftopic silent and be thought a fool, than to speak and remove all doubt.","How is it one careless match can start a forest fire, but it takes a whole box to start a campfire?","A bus station is where a bus stops. A train station is where a train stops. On my desk, I have a work station..","Some people are like Slinkies ... not really good for anything, but you can't help smiling when you see one tumble down the stairs.","Did you know that dolphins are so smart that within a few weeks of captivity, they can train people to stand on the very edge of the pool and throw them fish?","A bank is a place that will lend you money, if you can prove that you don't need it.","I thought I wanted a career, turns out I just wanted paychecks.","Never, under any circumstances, take a sleeping pill and a laxative on the same night.","Whenever I fill out an application, in the part that says \"If an emergency, notify:\" I put \"DOCTOR\". What's my mother going to do?","I didn't fight my way to the top of the food chain to be a vegetarian","A computer once beat me at chess, but it was no match for me at kick boxing.","I didn't say it was your fault, I said I was blaming you.","I saw a woman wearing a sweat shirt with \"Guess\" on it...so I said \"Implants?\"","The shinbone is a device for finding furniture in a dark room.","Why does someone believe you when you say there are four billion stars, but check when you say the paint is wet?","The sole purpose of a child's middle name, is so he can tell when he's really in trouble.","God must love stupid people. He made SO many.","Women will never be equal to men until they can walk down the street with a bald head and a beer gut, and still think they are sexy.","Good girls are bad girls that never get caught.","Behind every successful man is his woman. Behind the fall of a successful man is usually another woman.","Some people say \"If you can't beat them, join them\". I say \"If you can't beat them, beat them\", because they will be expecting you to join them, so you will have the element of surprise.","Why do Americans choose from just two people to run for president and 50 for Miss America?","Crowded elevators smell different to midgets.","You do not need a parachute to skydive. You only need a parachute to skydive twice.","The voices in my head may not be real, but they have some good ideas!","A clear conscience is usually the sign of a bad memory.","The offtopic reason Santa is so jolly is because he knows where all the bad girls live.","Laugh at your problems, everybody else does.","Never get into fights with ugly people, they have nothing to lose.","It's not the fall that kills you; it's the sudden stop at the end.","Artificial intelligence is no match for natural stupidity.","Always borrow money from a pessimist. He won't expect it back.","He who smiles in a crisis has found someone to blame.","A diplomat is someone who can tell you to go to hell in such a way that you will look forward to the trip.","We have enough gun control. What we need is idiot control.","Hospitality: making your guests feel like they're at home, even if you wish they were.","My opinions may have changed, but not the fact that I am right.","Money can't buy happiness, but it sure makes misery easier to live with.","When in doubt, mumble.","I discovered I scream the same way whether I'm about to be devoured by a great white shark or if a piece of seaweed touches my foot.","I intend to live forever. So far, so good.","Women may not hit harder, but they hit lower.","A little boy asked his father, \"Daddy, how much does it cost to get married?\" Father replied, \"I don't know son, I'm still paying.\"","Worrying works! 90% of the things I worry about never happen.","Just remember...if the world didn't suck, we'd all fall off.","My psychiatrist told me I was crazy and I said I want a second opinion. He said okay, you're ugly too.","Some cause happiness wherever they go. Others whenever they go.","Jesus loves you, but everyone else thinks you're an asshole.","I don't trust anything that bleeds for five days and doesn't die.","I like work. It fascinates me. I sit and look at it for hours.","I should've known it wasn't going to work out between my ex-wife and me. After all, I'm a Libra and she's a bitch.","I always take life with a grain of salt, ...plus a slice of lemon, ...and a shot of tequila.","Never hit a man with glasses. Hit him with a baseball bat.","There's a fine line between cuddling and holding someone down so they can't get away.","A bug in the code is worth two in the documentation.","According to my calculations the problem doesn't exist.","A computer's attention span is as long as its power cord.","A computer scientist is someone who fixes things that aren't broken.","Adding manpower to a late software project makes it later.","Air conditioned environment - Do not open Windows!","All computers wait at the same speed.","All wiyht. Rho sritched mg kegtops awound?\nWillyoupleasehelpmefixmykeyboard?Thespacebarisbroken!","All you need to know is the user interface.","Any programming language is at its best before it is implemented and used.","Any program that runs right is obsolete.","A paperless office has about as much chance as a paperless bathroom.","A printer consists of three offtopic parts: the case, the jammed paper tray and the blinking red light.","A Life? Cool! Where can I download one of those from?","A program is never finished until the programmer dies.","ASCII stupid question, get a stupid ANSI!","As far as we know, our computer has never had an undetected error.","A user friendly computer first requires a friendly user.","A user will find any interface design intuitive...with enough practice.","Backup not found: (A)bort (R)etry (P)anic","Bad or missing mouse driver. Spank the cat [Y/N]?","Be aware of Programmers who carry screwdrivers.","Best file compression around: \"DEL *.*\" = 100% compression","Beta. Software undergoes beta testing shortly before it's released. Beta is Latin for \"still doesn't work.\"","Bug? That's not a bug, that's a feature.","Build a system that even a fool can use, and only a fool will use it.","Buy a Pentium 586/200 so you can reboot faster.","Cannot load Windows 95, Incorrect DOS Version.","COFFEE.EXE Missing---Insert Cup and Press Any Key.","Compatible: Gracefully accepts erroneous data from any source.","Computer analyst to programmer: \"You start coding. I'll go find out what they want.\"","Computer and car salesmen differ in that the latter know when they are lying.","Computer programmers do it byte by byte.","Computer programmers don't byte, they nibble a bit.","Computers are a more fun way to do the same work you'd have to do without them.","Computers are like air-conditioners: both stop working, if you open windows.","Computers are not intelligent. They only think they are.","Computers are unreliable, but humans are even more unreliable.","Computers can never replace human stupidity.","Computer Science: solving today's problems tomorrow.","Computers follow your orders, not your intentions.","Computers make very fast, very accurate mistakes.","Crashing is the only thing windows does quickly.","Daddy, what does FORMATTING DRIVE C mean?","Disclaimer: Any errors in spelling, tact, or fact are transmission errors.","Disinformation is not as good as datinformation.","Don't compute and drive; the life you save may be your own.","Don't document the program; program the document.","Don't hit the keys so hard, it hurts.","Don't let the computer bugs bite!","DOS=HIGH? I knew it was on something!","DOS Tip: Add BUGS=OFF to your CONFIG.SYS","Email returned to sender -- insufficient voltage.","Enter any 11-digit prime number to continue...","Error:015: Unable to exit Windows. Try the door.","Error: Problem exists between keyboard and chair.","Error reading FAT record: Try the SKINNY one? (Y/N)","Ever notice how fast Windows runs? Neither did I...","Every bug you find is the last one.","Every time I type 'win', I loose ...","Excuse me for butting in, but I'm interrupt-driven.","Failure is not an option, it comes bundled with the software.",".....File not found. Should I fake it? (Y/N)","For any problem there is a solution that is simple, quick, and ultimately worse than the problem.","Hardware: The parts of a computer system that can be kicked.","Hi, my name is Any Key. Please don't hit me!","Hiroshima..45........Tjernobil..86........Windows..95....","Hit any user to continue.","Home is where the computer is plugged in.","How an engineer writes a program: Start by debugging an empty file...","I am a computer, dumber than any human and smarter than an administrator.","If at first you don't succeed, call it version 1.0.","If a train station is where the train stops, what is a work station?","I finally made my stupid computer faster; I dropped it out of the window, and it went really fast.","If the automobile had followed the same development cycle as the computer, a Rolls-Royce today would cost $100, get a million miles to the gallon, and explode once a year, killing everyone inside.","If the pen is mightier than the sword, and a picture is worth a thousand words, how dangerous is a fax?","If your computer says, \"Printer out of Paper,\" this problem cannot be resolved by continuously clicking the \"OK\" button.","I have a dream: 1073741824 bytes free.","I haven't lost my mind; it's backed up on tape somewhere.","I hit the CTRL key but I'm still not in control!","I'm writing a book. I've got the page numbers done.","In a few minutes a computer can make a mistake so great that it would take many men many months to equal it.","Is reading in the bathroom considered Multi-Tasking.","It is easier to write an incorrect program than understand a correct one.","It said \"Insert disk 3...\" but only 2 fit.","It's not a bug; it's an undocumented feature.","It works! Now if only I could remember what I did...","I wish life has a scroll back buffer.","Keyboard : Instrument used to enter errors into computer.","Keyboard not connected, press F1 to continue.","MACINTOSH stands for Most Applications Crash If Not The Operating System Hangs.","offtopictenance-free: When it breaks, it can't be fixed...","Math problems? Call 1-800-[(10x)(ln(13e))]-[sin(xy)/2.362x]","Melted fruit snacks found on Keyboard. Delete nephew [Y/N]?","MICROSOFT: Most Intelligent Customers Realize Our Software is Only for Fools and Teenagers.","Mommy! The cursor's winking at me!","My software never has bugs. It just develops random features.","Never say \"OOPS!\" always say \"Ah, Interesting!\"","No matter how much data you add to your laptop, it will not get heavier.","Of course I know how to copy disks. Where's the xerox machine?","One person's error is another person's data.","One picture is worth 128K words.","Operator! Trace this call and tell me where I am.","Owners of digital watches: Your day's are numbered!","Oxymoron: Microsoft Works.","Press any key...no, no, no, NOT THAT ONE!","Press any key to continue or any other key to quit...","Press CTRL-ALT-DEL to continue....","Programmers don't die, they just GOSUB without RETURN.","Programmer's Time-Space Continuum: Programmers continuously space the time.","RAM disk is NOT an installation procedure.","Reference Manual: Object that raises the monitor to eye level. Also used to compensate for that short table leg.","Scheduled Release Date: A carefully calculated date determined by estimating the actual shipping date and subtracting six months from it.","Shift to the left! Shift to the right! Pop up, push down, byte, byte, byte!","Shutting down networkservers reguarly during worktime prevents RSI and develops social contacts at work.","Speed Kills! Use Windows.","System going down at 1:45 for disk crashing.","The box said: 'install on Windows 95, NT 4.0 or better'. So I installed it on Linux.","The definition of an upgrade: Take old bugs out, put new ones in.","The name is Baud......, James Baud.","The program is absolutely right; therefore the computer must be wrong.","The programmer's national anthem is 'AAAAAAAAHHHHHHHH'.","The Queue Principle: The longer you wait in line, the greater the likelihood that you are standing in the wrong line.","There are never enough hours in a day, but always too many days before Saturday.","There are only 10 types of people in this world: those who understand binary, and those who don't.\"","There are two ways to write error-free programs; only the third one works.","There can never be a computer language in which you cannot write a bad program.","There were computers in Biblical times. Eve had an Apple.","These settings will have no effect until you restart the system.\nReset Universe (Y/N) ?","Those who can, do. Those who cannot, teach. Those who cannot teach, HACK!","To be, or not to be, those are the parameters.","To err is human, but to really foul things up requires a computer.","User error: replace user and press any key to continue.","Warning, keyboard not found. Press Enter to continue.","What boots up must come down.","Who's General Failure and why's he reading my disk?","Why doesn't DOS ever say \"EXCELLENT command or filename!\"","Why do they call this a word processor? It's simple, ... you've seen what food processors do to food, right?","Why do we want intelligent terminals when there are so many stupid users?","Will the information superhighway have any rest stops?","Windows 3.1 not found: (C)heer, (P)arty, (D)ance?","Windows is NOT a virus. Viruses DO something.","WINDOWS stands for Will Install Needless Data On Whole System.","Windows: the ultimate triumph of marketing over technology.","You are making progress if each mistake is a new one.","You don't have to know how the computer works, just how to work the computer.","You forgot to do your backup 16 days ago. Tomorrow you'll need that version.","You had mail, but the super-user read it, and deleted it!","You never finish a program, you just stop working on it."];
+
+meload();
+</script>
+
+      </body> 
+</html>
